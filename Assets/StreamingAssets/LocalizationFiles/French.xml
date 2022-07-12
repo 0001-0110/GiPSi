@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<French>
+    <string name="Text_AppName">GiPSi</string>
+    <string name="Text_InvalidInput">Données invalides</string>
+
+    <!--  -->
+    <string name="InputField_FirstName">Prénom</string>
+    <string name="InputField_LastName">Nom de famille</string>
+    <string name="InputField_Password">Mot de passe</string>
+
+    <string name="Button_Login">Connexion</string>
+    <string name="Button_Back">Retour</string>
+    <string name="Button_InvalidInput">Données invalides</string>
+    <string name="Button_SetDestination">Choisir une destination</string>
+    <string name="Button_Settings">Parametres</string>
+    <string name="Button_Disconnect">Se deconnecter</string>
+
+    <string name="Button_NextStep">Etape suivante</string>
+    <string name="Button_Scan">Scanner à nouveau</string>
+
+    <string name="Direction_Up">Continuez tout droit</string>
+    <string name="Direction_Left">Tournez à gauche</string>
+    <string name="Direction_Down">Faites demi tour</string>
+    <string name="Direction_Right">Tournez à droite</string>
+</French>

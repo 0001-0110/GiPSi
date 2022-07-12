@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<General>
+    <string name="Language_English">English</string>
+    <string name="Language_French">Francais</string>
+    <string name="Language_German">Deutsch</string>
+    <string name="Language_Romanian">Românesc</string>
+    <string name="Language_Arabic">عربى</string>
+    <string name="Language_Turkish">Türk</string>
+    <string name="Language_Italian">Italiano</string>
+    <string name="Language_Serbian">Српски</string>
+    <string name="Language_Portuguese">Português</string>
+    <string name="Language_Spanish">Español</string>
+</General>

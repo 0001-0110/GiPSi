@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<English>
+    <string name="Text_AppName">GiPSi</string>
+    <string name="Text_InvalidInput">Invalid input</string>
+
+    <!--  -->
+    <string name="InputField_FirstName">First name</string>
+    <string name="InputField_LastName">Last name</string>
+    <string name="InputField_Password">Password</string>
+
+    <!-- General -->
+    <string name="Button_Back">Back</string>
+    <!-- Login screen -->
+    <string name="Button_Login">Login</string>
+    <string name="Button_InvalidInput">Invalid input</string>
+    <!-- Main Menu -->
+    <string name="Button_SetDestination">Set destination</string>
+    <string name="Button_Settings">Settings</string>
+    <string name="Button_Disconnect">Disconnect</string>
+    <!-- Settings screen -->
+    <string name="Button_ClassSettings">Class settings</string>
+    <string name="Button_SectionSettings">Section settings</string>
+    <!--string name="Button_HandicapSettings"></string-->
+    <string name="Button_LanguageSettings">Language settings</string>
+</English>
