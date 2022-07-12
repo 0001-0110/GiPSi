@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using Mono.Data.Sqlite;
 
+/// <summary>
+/// I'm sorry. I tried, I really did
+/// </summary>
 public class SQLiteService
 {
     public string DataBaseName;
@@ -41,7 +44,7 @@ public class SQLiteService
     }
 
     /// <summary>
-    /// good luck
+    /// Good luck
     /// </summary>
     /// <param name="tableName"></param>
     /// <param name="selected"></param>
@@ -51,6 +54,7 @@ public class SQLiteService
     /// <param name="offset"></param>
     /// <param name="groupBy"></param>
     /// <param name="groupFilter"></param>
+    /// <remarks>I'm not sure of what I did</remarks>
     public string SelectQuery(string tableName, string selected = "*", string rowFilter = null, string orderByField = null, int limit = -1, int offset = -1, string groupBy = null, string groupFilter = null)
     {
         string conditionString = rowFilter == null ? "" : $" WHERE {rowFilter}";
