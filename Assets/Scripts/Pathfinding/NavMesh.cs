@@ -15,23 +15,20 @@ public class NavMesh : MonoBehaviour
 
     public void OnDrawGizmos()
     {
-        
+
     }
 
     public void Start()
     {
         nodes = new List<Node>();
         destinations = new Dictionary<Destination, List<Node>>();
+        foreach (Destination destination in Enum.GetValues(typeof(Destination)))
+            destinations[destination] = new List<Node>();
         // put all navNodes in the list
         foreach (Node node in GetComponentsInChildren<Node>())
         {
             nodes.Add(node);
-            if (node.Destination != Destination.None)
-            {
-                if (!destinations.ContainsKey(node.Destination))
-                    destinations[node.Destination] = new List<Node>();
-                destinations[node.Destination].Add(node);
-            }
+            destinations[node.Destination].Add(node);
         }
     }
 

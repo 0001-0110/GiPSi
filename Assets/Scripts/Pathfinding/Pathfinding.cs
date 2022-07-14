@@ -4,11 +4,13 @@ namespace Pathfinding
     {
         None,
         Cafetaria,
+        CPE1,
+        CPE2,
         Homeroom,
         Infirmary,
         Library,
         Toilets,
-        Room101,
+        Room101 = 101,
         Room102,
         Room103,
         Room104,
@@ -22,7 +24,7 @@ namespace Pathfinding
         Room112,
         Room113,
         Room114,
-        Room201,
+        Room201 = 201,
         Room202,
         Room203,
         Room204,
@@ -37,11 +39,4 @@ namespace Pathfinding
         Room213,
         Room214,
     }
-
-    /*[Serializable]
-    public class DestinationNode
-    {
-        public Destination Destination;
-        public Node Node;
-    }*/
 }

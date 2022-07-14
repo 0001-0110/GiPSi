@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 using Pathfinding;
 
-public class GuidanceScreenController : ScreenController
+public class NavigationScreenController : ScreenController
 {
     public NavMesh navMesh;
     private Stack<Node> path;
@@ -34,8 +34,21 @@ public class GuidanceScreenController : ScreenController
     [NonReorderable]
     public AudioClip[] AudioClips;
 
+    public void OnDrawGizmos()
+    {
+        if (path == null)
+            return;
+        foreach (Node node in path)
+        {
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawSphere(node.Position, 0.75f);
+        }
+    }
+
     public override void Start()
     {
+        Node startingNode = navMesh.GetNode("101");
+        path = navMesh.GetPath(startingNode, navMesh.GetNode(startingNode, Destination.Room207));
         SetDirection(Direction.Left);
     }
 

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 using Pathfinding;
 
@@ -28,11 +29,19 @@ public class Node : MonoBehaviour
     public void OnDrawGizmos()
     {
         Gizmos.color = neighbours.Contains(null) || neighbours.Contains(this) ? Color.red : Destination == Destination.None ? Color.blue : Color.green;
-        Gizmos.DrawSphere(Position, 10);
+        Gizmos.DrawSphere(Position, 0.5f);
+        /*if (Destination != Destination.None)
+        {
+            Handles.color = Color.green;
+            Handles.Label(new Vector3(Position.x, Position.y, Position.z - 1), Name);
+        }*/
         foreach (Node neighbour in neighbours)
         {
-            Gizmos.color = neighbour.neighbours.Contains(this) ? Color.blue : Color.red;
-            Gizmos.DrawLine(Position, neighbour.Position);
+            if (neighbour != null)
+            {
+                Gizmos.color = neighbour.neighbours.Contains(this) ? Color.blue : Color.red;
+                Gizmos.DrawLine(Position, neighbour.Position);
+            }
         }
     }
 
