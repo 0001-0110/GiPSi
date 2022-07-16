@@ -121,4 +121,29 @@ public class NavMesh : MonoBehaviour
         // once the destination reached, recursive call to find the path
         return currentNode.Path();
     }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="startingNode">The node where the path start</param>
+    /// <param name="destinationNode">The node we are seeking a path to</param>
+    /// <returns></returns>
+    /// <remarks>This method really needs some comments</remarks>
+    public Stack<Node> GetSimplifiedPath(Node startingNode, Node destinationNode)
+    {
+        Stack<Node> path = StackService.ReverseStack(GetPath(startingNode, destinationNode));
+        Stack<Node> simplifiedPath = new Stack<Node>();
+        Node previousNode = path.Pop();
+        simplifiedPath.Push(previousNode);
+        while (path.Count > 1)
+        {
+            Node currentNode = path.Pop();
+            Debug.Log($"DEBUG - 22 | {previousNode} => {currentNode}\nDirection: {PathFindingService.GetDirection(previousNode, currentNode, path.Peek())}");
+            if (PathFindingService.GetDirection(previousNode, currentNode, path.Peek()) != Direction.Forward)
+                simplifiedPath.Push(currentNode);
+            previousNode = currentNode;
+        }
+        simplifiedPath.Push(path.Pop());
+        return simplifiedPath;
+    }
 }

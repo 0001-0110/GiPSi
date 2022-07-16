@@ -1,14 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 
 using Pathfinding;
 
 public class Node : MonoBehaviour
 {
     public Vector3 Position => transform.position;
+
     public string Name;
     public Destination Destination;
+
     [Tooltip("All the nodes accessible from this one")]
     public List<Node> neighbours;
 
