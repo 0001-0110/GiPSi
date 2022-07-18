@@ -19530,6 +19530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc182431f8c447e4ca1e98c7568f1fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  screenModes: []
   navMesh: {fileID: 908357418}
   BackgroundImage: {fileID: 972719978}
   DirectionImage: {fileID: 1725045666}
@@ -19540,8 +19541,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c27b1ac3e56643f438a572d7022b7106, type: 3}
   - {fileID: 21300000, guid: f84ede51e0a833c47b16a55edf4f78b4, type: 3}
   - {fileID: 21300000, guid: e0ae404a58005d04d98b0bf6a0108bd6, type: 3}
+  - {fileID: 21300000, guid: c27b1ac3e56643f438a572d7022b7106, type: 3}
+  - {fileID: 21300000, guid: e0ae404a58005d04d98b0bf6a0108bd6, type: 3}
   - {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   AudioClips:
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

@@ -18,8 +18,10 @@
     <string name="Button_NextStep">Etape suivante</string>
     <string name="Button_Scan">Scanner à nouveau</string>
 
-    <string name="Direction_Up">Continuez tout droit</string>
+    <string name="Direction_Forward">Continuez tout droit</string>
     <string name="Direction_Left">Tournez à gauche</string>
-    <string name="Direction_Down">Faites demi tour</string>
+    <string name="Direction_Backward">Faites demi tour</string>
     <string name="Direction_Right">Tournez à droite</string>
+    <string name="Direction_Up">Montez les escaliers</string>
+    <string name="Direction_Down">Montez les escaliers</string>
 </French>
