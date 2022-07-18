@@ -131,14 +131,14 @@ public class NavMesh : MonoBehaviour
     /// <remarks>This method really needs some comments</remarks>
     public Stack<Node> GetSimplifiedPath(Node startingNode, Node destinationNode)
     {
-        Stack<Node> path = StackService.ReverseStack(GetPath(startingNode, destinationNode));
+        Stack<Node> path = GetPath(startingNode, destinationNode);
         Stack<Node> simplifiedPath = new Stack<Node>();
         Node previousNode = path.Pop();
         simplifiedPath.Push(previousNode);
         while (path.Count > 1)
         {
             Node currentNode = path.Pop();
-            Debug.Log($"DEBUG - 22 | {previousNode} => {currentNode}\nDirection: {PathFindingService.GetDirection(previousNode, currentNode, path.Peek())}");
+            //Debug.Log($"DEBUG - 22 | {previousNode} => {currentNode}\nDirection: {PathFindingService.GetDirection(previousNode, currentNode, path.Peek())}");
             if (PathFindingService.GetDirection(previousNode, currentNode, path.Peek()) != Direction.Forward)
                 simplifiedPath.Push(currentNode);
             previousNode = currentNode;

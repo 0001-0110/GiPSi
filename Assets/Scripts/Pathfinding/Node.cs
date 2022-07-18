@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 using Pathfinding;
 
@@ -8,6 +9,7 @@ public class Node : MonoBehaviour
     public Vector3 Position => transform.position;
 
     public string Name;
+    public Sprite Sprite;
     public Destination Destination;
 
     [Tooltip("All the nodes accessible from this one")]
@@ -29,7 +31,7 @@ public class Node : MonoBehaviour
 
     public void OnDrawGizmos()
     {
-        Gizmos.color = neighbours.Contains(null) || neighbours.Contains(this) ? Color.red : Destination == Destination.None ? Color.blue : Color.green;
+        Gizmos.color = neighbours.Contains(null) || neighbours.Contains(this) ? Color.red : Destination == Destination.None ? Color.yellow : Color.green;
         Gizmos.DrawSphere(Position, 0.5f);
         /*if (Destination != Destination.None)
         {

@@ -4,33 +4,21 @@ using UnityEngine.UI;
 
 using Pathfinding;
 
-public class NavigationScreenController : ScreenController
+public class NavigationScreenController : ModularScreenController
 {
     public NavMesh navMesh;
     private Stack<Node> path;
+    private Node currentNode;
 
     public Image BackgroundImage;
     public Image DirectionImage;
     public TextController DirectionText;
     public AudioSource DirectionAudioSource;
 
-    private enum Direction
-    {
-        Right,
-        Up,
-        Left,
-        Down,
-        None,
-    }
-
-    /// <summary>
-    /// The order of the spite is important, must be in the same order as the enum
-    /// </summary>
+    [Tooltip("The order of the sprite is important: must be in the same order as the directions, and end with the one to display when the destination is reached")]
     [NonReorderable]
     public Sprite[] Sprites;
-    ////// <summary>
-    /// The order of the audio clips is important, must be in the same order as the enum
-    /// </summary>
+    [Tooltip("The order of the audios is important: must be in the same order as the directions, and end with the one to play when the destination is reached")]
     [NonReorderable]
     public AudioClip[] AudioClips;
 
@@ -38,6 +26,11 @@ public class NavigationScreenController : ScreenController
     {
         if (path == null)
             return;
+        if (currentNode != null)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawSphere(currentNode.Position, 0.75f);
+        }
         foreach (Node node in path)
         {
             Gizmos.color = Color.cyan;
@@ -47,36 +40,36 @@ public class NavigationScreenController : ScreenController
 
     public override void Start()
     {
-        Node startingNode = navMesh.GetNode("101");
-        path = navMesh.GetPath(startingNode, navMesh.GetNode(startingNode, Destination.Room207));
-        SetDirection(Direction.Left);
-    }
-
-    private void SetDirection(Direction direction)
-    {
-        DirectionImage.sprite = Sprites[(int)direction];
-        DirectionText.SetText($"Direction_{direction}");
-    }
-
-    private Direction GetNextDirection()
-    {
-        // TODO
-        return Direction.Up;
+        StartNavigation("101", Destination.Room207);
     }
 
     public void NextStep()
     {
-        // TODO
-        path.Pop();
-        Direction nextDirection = GetNextDirection();
-        DirectionAudioSource.PlayOneShot(AudioClips[(int)nextDirection]);
+        if (path.Count < 2)
+        {
+            // Destination reached
+            DirectionImage.sprite = Sprites[Sprites.Length - 1];
+            DirectionText.SetText("Direction_DestinationReached");
+        }
+        else
+        {
+            // TODO This line is sus
+            Direction nextDirection = PathFindingService.GetDirection(currentNode, currentNode = path.Pop(), path.Peek());
+            BackgroundImage.sprite = currentNode.Sprite;
+            DirectionImage.sprite = Sprites[(int)nextDirection];
+            DirectionText.SetText($"Direction_{nextDirection}");
+            //DirectionAudioSource.PlayOneShot(AudioClips[(int)nextDirection]);
+        }
     }
 
-    public void StartGuidance(string position, Destination destination)
+    public void StartNavigation(string position, Destination destination)
     {
+        // TODO
+        //SetMode("Navigation");
         Node startingNode = navMesh.GetNode(position);
         Node destinationNode = navMesh.GetNode(startingNode, destination);
-        path = navMesh.GetPath(startingNode, destinationNode);
+        path = navMesh.GetSimplifiedPath(startingNode, destinationNode);
+        currentNode = path.Pop();
         NextStep();
     }
 }
