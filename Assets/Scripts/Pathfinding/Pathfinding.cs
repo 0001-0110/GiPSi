@@ -9,7 +9,6 @@ namespace Pathfinding
         Cafetaria,
         CPE1,
         CPE2,
-        Homeroom,
         Infirmary,
         Library,
         Toilets,

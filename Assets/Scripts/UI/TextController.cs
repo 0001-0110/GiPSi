@@ -32,6 +32,9 @@ public class TextController : MonoBehaviour
     public void SetText(string localizationString)
     {
         this.localizationString = localizationString;
-        text.text = languageController.GetText(localizationString);
+        // text might be null if SetText is called before this object is enabled
+        // This is not a problem tho, as it will only update the localization string and wiat for OnEnable to update the text
+        if (text != null)
+            text.text = languageController.GetText(localizationString);
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 using Pathfinding;
 
+// TODO modular screen controller
 public class NavigationScreenController : ModularScreenController
 {
     public NavMesh navMesh;
@@ -62,14 +63,19 @@ public class NavigationScreenController : ModularScreenController
         }
     }
 
-    public void StartNavigation(string position, Destination destination)
+    public bool StartNavigation(string position, Destination destination)
     {
         // TODO
         //SetMode("Navigation");
         Node startingNode = navMesh.GetNode(position);
+        if (startingNode == null)
+            return false;
         Node destinationNode = navMesh.GetNode(startingNode, destination);
+        if (destinationNode == null)
+            return false;
         path = navMesh.GetSimplifiedPath(startingNode, destinationNode);
         currentNode = path.Pop();
         NextStep();
+        return true;
     }
 }
