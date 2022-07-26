@@ -39,11 +39,6 @@ public class NavigationScreenController : ModularScreenController
         }
     }
 
-    public override void Start()
-    {
-        StartNavigation("101", Destination.Room207);
-    }
-
     public void NextStep()
     {
         if (path.Count < 2)
@@ -51,6 +46,7 @@ public class NavigationScreenController : ModularScreenController
             // Destination reached
             DirectionImage.sprite = Sprites[Sprites.Length - 1];
             DirectionText.SetText("Direction_DestinationReached");
+            SetMode("DestinationReached");
         }
         else
         {
@@ -63,16 +59,9 @@ public class NavigationScreenController : ModularScreenController
         }
     }
 
-    public bool StartNavigation(string position, Destination destination)
+    public bool StartNavigation(Node startingNode, Node destinationNode)
     {
-        // TODO
-        //SetMode("Navigation");
-        Node startingNode = navMesh.GetNode(position);
-        if (startingNode == null)
-            return false;
-        Node destinationNode = navMesh.GetNode(startingNode, destination);
-        if (destinationNode == null)
-            return false;
+        SetMode("Navigating");
         path = navMesh.GetSimplifiedPath(startingNode, destinationNode);
         currentNode = path.Pop();
         NextStep();

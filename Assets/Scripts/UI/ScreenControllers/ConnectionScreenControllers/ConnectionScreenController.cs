@@ -2,7 +2,7 @@ using System;
 using System.Threading.Tasks;
 using UnityEngine;
 
-public class ConnectionScreenController : ScreenController
+public abstract class ConnectionScreenController : ScreenController
 {
     public TextController TextController;
 
@@ -18,7 +18,7 @@ public class ConnectionScreenController : ScreenController
         throw new NotImplementedException();
     }
 
-    protected async void InvalidInput(int delay = 1000)
+    protected async Task InvalidInput(int delay = 1000)
     {
         string previousLocalizationString = TextController.localizationString;
         TextController.SetText(InvalidText);
@@ -34,10 +34,10 @@ public class ConnectionScreenController : ScreenController
     /// <summary>
     /// TODO need to be renamed
     /// </summary>
-    public void Validate()
+    public async void Validate()
     {
         if (!IsInputValid())
-            InvalidInput();
+            await InvalidInput();
         else
         {
             // TODO save the profile

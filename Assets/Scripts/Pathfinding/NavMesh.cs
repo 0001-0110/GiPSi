@@ -43,8 +43,16 @@ public class NavMesh : MonoBehaviour
         return nodes.Find(node => node.Name == nodeName);
     }
 
+    /// <summary>
+    /// get the node the has the correct destination and closest from the given node
+    /// </summary>
+    /// <param name="startingNode"></param>
+    /// <param name="destination"></param>
+    /// <returns>null if no node is going to the right destination</returns>
     public Node GetNode(Node startingNode, Destination destination)
     {
+        if (startingNode == null || destinations[destination].Count == 0)
+            return null;
         return ListService.Min(destinations[destination], node => node.Distance(startingNode));
     }
 
@@ -123,7 +131,7 @@ public class NavMesh : MonoBehaviour
     }
 
     /// <summary>
-    /// 
+    /// Simplify the path by removing all intermediary steps that are not changing the path
     /// </summary>
     /// <param name="startingNode">The node where the path start</param>
     /// <param name="destinationNode">The node we are seeking a path to</param>

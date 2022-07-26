@@ -16,6 +16,7 @@ public class MainMenuController : ScreenController
 
     public void StartNavigation(int destinationIndex)
     {
+        Debug.Log($"DEBUG - 22 | {(Destination)destinationIndex}");
         positionScreenController.SetDestination((Destination)destinationIndex);
         OpenScreen(PositionScreen);
     }
