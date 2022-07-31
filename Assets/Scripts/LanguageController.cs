@@ -1,18 +1,25 @@
+using System;
 using System.Collections.Generic;
 using System.Xml;
 using UnityEngine;
 
 public class LanguageController : MonoBehaviour
 {
-    public List<string> Languages;
-
-    public string CurrentLanguage { get; private set; }
+    public Language CurrentLanguage { get; private set; }
     public Dictionary<string, string> LocalizationStrings { get; private set; }
 
     public void Awake()
     {
-        // TODO temp value for testing purposes
-        SetLanguage("French");
+        PlayerPrefs.DeleteAll();
+        if (PlayerPrefs.HasKey("Language"))
+            SetLanguage(PlayerPrefs.GetInt("Language"));
+        else
+            SetLanguage(GetSystemLanguage());
+    }
+
+    private Language GetSystemLanguage(Language DefaultLanguage = Language.English)
+    {
+        return Enum.IsDefined(typeof(Language), (int)Application.systemLanguage) ? DefaultLanguage : (Language)Application.systemLanguage;
     }
 
     private XmlNodeList LoadLocalizationFile(string fileName)
@@ -21,14 +28,21 @@ public class LanguageController : MonoBehaviour
         return localizationFile.SelectNodes($"{fileName}/string");
     }
 
-    public void SetLanguage(string language)
+    public void SetLanguage(Language language)
     {
+        // If the language is not defined, trying to load could create many errors
+        if (!Enum.IsDefined(typeof(Language), language))
+            throw new ArgumentException("I don't speak Klingon");
         CurrentLanguage = language;
+        Debug.Log($"DEBUG - 22 | CurrentLanguage: {CurrentLanguage}");
+        // Save this value for the next time the app is used
+        PlayerPrefs.SetInt("Language", (int)CurrentLanguage);
         LocalizationStrings = new Dictionary<string, string>();
-        foreach (string fileName in new string[] { "General", CurrentLanguage })
+        foreach (string fileName in new string[] { "General", CurrentLanguage.ToString() })
         {
             foreach (XmlNode node in LoadLocalizationFile(fileName))
             {
+                // "name" is the attribute containing the localization string in the xml file
                 LocalizationStrings.Add(node.Attributes["name"].Value, node.InnerText);
             }
         }
@@ -36,7 +50,7 @@ public class LanguageController : MonoBehaviour
 
     public void SetLanguage(int languageIndex)
     {
-        SetLanguage(Languages[languageIndex]);
+        SetLanguage((Language)languageIndex);
     }
 
     public string GetText(string localizationString)
@@ -50,5 +64,15 @@ public class LanguageController : MonoBehaviour
         else
             //
             return LocalizationStrings[localizationString];
+    }
+
+    public string GetLocalizationString(string text)
+    {
+        foreach (KeyValuePair<string, string> pair in LocalizationStrings)
+        {
+            if (pair.Value == text)
+                return pair.Key;
+        }
+        return null;
     }
 }

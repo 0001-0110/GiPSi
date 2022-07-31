@@ -1,10 +1,18 @@
-using System;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class ConnectionScreenController : ScreenController
 {
+    public ScheduleController ScheduleController;
+
+    public InputField FirstNameInput;
+    public InputField LastNameInput;
+    public InputField PasswordInput;
+
     public TextController TextController;
+    protected InputField[] inputFields;
+    protected Dropdown[] dropdowns;
 
     public string InvalidText;
 
@@ -13,9 +21,27 @@ public abstract class ConnectionScreenController : ScreenController
     /// </summary>
     public GameObject NextScreen;
 
+    public override void Awake()
+    {
+        base.Awake();
+        inputFields = GetComponentsInChildren<InputField>();
+        dropdowns = GetComponentsInChildren<Dropdown>();
+    }
+
+    public override void OnEnable()
+    {
+        base.OnEnable();
+        ResetScreen();
+    }
+
     protected virtual void ResetScreen()
     {
-        throw new NotImplementedException();
+        // Clear all input fields
+        foreach (InputField inputField in inputFields)
+            inputField.text = string.Empty;
+        // Reset all Dropdowns
+        foreach (Dropdown dropdown in dropdowns)
+            dropdown.value = 0;
     }
 
     protected async Task InvalidInput(int delay = 1000)
@@ -26,10 +52,7 @@ public abstract class ConnectionScreenController : ScreenController
         TextController.SetText(previousLocalizationString);
     }
 
-    protected virtual bool IsInputValid()
-    {
-        throw new NotImplementedException();
-    }
+    protected abstract bool IsInputValid();
 
     /// <summary>
     /// TODO need to be renamed
@@ -41,6 +64,8 @@ public abstract class ConnectionScreenController : ScreenController
         else
         {
             // TODO save the profile
+            // TODO this is going to throw an null reference exception
+            ScheduleController.LoadTimeTable($"{LastNameInput.text}_{FirstNameInput.text}");
             // Go to the main menu screen
             OpenScreen(NextScreen);
             NextScreen.GetComponent<ModularScreenController>().SetMode("SignUp");
