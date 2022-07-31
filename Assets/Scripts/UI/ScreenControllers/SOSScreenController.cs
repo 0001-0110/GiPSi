@@ -1,5 +1,4 @@
-using UnityEngine;
-using UnityEngine.Networking;
+using Services;
 
 public class SOSScreenController : ScreenController
 {
@@ -7,6 +6,6 @@ public class SOSScreenController : ScreenController
 
     public void SendSOS(string message)
     {
-        Services.PhoneService.SendSMS(MobileNumber, message);
+        PhoneService.SendSMS(MobileNumber, message);
     }
 }
