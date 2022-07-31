@@ -28,6 +28,8 @@ namespace Services
                 // Try to load the localization file
 #if UNITY_EDITOR
                 xmlDocument.Load(path);
+                // To avoid the warning
+                await Task.Delay(0);
                 return xmlDocument;
 #else
                 UnityWebRequest request = UnityWebRequest.Get(path);
