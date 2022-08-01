@@ -10,7 +10,6 @@ public class LanguageController : MonoBehaviour
 
     public void Awake()
     {
-        PlayerPrefs.DeleteAll();
         if (PlayerPrefs.HasKey("Language"))
             SetLanguage(PlayerPrefs.GetInt("Language"));
         else
@@ -34,6 +33,7 @@ public class LanguageController : MonoBehaviour
         if (!Enum.IsDefined(typeof(Language), language))
             throw new ArgumentException("I don't speak Klingon");
         CurrentLanguage = language;
+        // TODO remove debug
         Debug.Log($"DEBUG - 22 | CurrentLanguage: {CurrentLanguage}");
         // Save this value for the next time the app is used
         PlayerPrefs.SetInt("Language", (int)CurrentLanguage);
