@@ -35,7 +35,7 @@ public class PositionScreenController : ScreenController
     private async Task InvalidInput()
     {
         StartNavigationButton.interactable = false;
-        string previousLocalizationString = startNavigationButtonTextController.localizationString;
+        string previousLocalizationString = startNavigationButtonTextController.LocalizationString;
         startNavigationButtonTextController.SetText(InvalidLocalizationString);
         await Task.Delay(Delay);
         startNavigationButtonTextController.SetText(previousLocalizationString);

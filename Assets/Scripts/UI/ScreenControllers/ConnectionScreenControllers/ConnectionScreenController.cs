@@ -4,10 +4,10 @@ using UnityEngine.UI;
 
 public abstract class ConnectionScreenController : ScreenController
 {
-    public ScheduleController ScheduleController;
+    protected ScheduleController scheduleController;
 
-    public InputField FirstNameInput;
-    public InputField LastNameInput;
+    public InputField UserNameInput;
+    //public InputField LastNameInput;
     public InputField PasswordInput;
 
     public TextController TextController;
@@ -24,6 +24,9 @@ public abstract class ConnectionScreenController : ScreenController
     public override void Awake()
     {
         base.Awake();
+
+        scheduleController = ScheduleController.Instance;
+
         inputFields = GetComponentsInChildren<InputField>();
         dropdowns = GetComponentsInChildren<Dropdown>();
     }
@@ -44,28 +47,42 @@ public abstract class ConnectionScreenController : ScreenController
             dropdown.value = 0;
     }
 
-    protected async Task InvalidInput(int delay = 1000)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="delay"></param>
+    /// <remarks>async void because we do not want to wait foir it to end</remarks>
+    protected async void InvalidInput(int delay = 1000)
     {
-        string previousLocalizationString = TextController.localizationString;
+        string previousLocalizationString = TextController.LocalizationString;
         TextController.SetText(InvalidText);
         await Task.Delay(delay);
         TextController.SetText(previousLocalizationString);
     }
 
-    protected abstract bool IsInputValid();
+    protected virtual bool IsInputValid()
+    {
+        return UserNameInput.text != string.Empty && PasswordInput.text != string.Empty;
+    }
+
+    protected virtual void Connect()
+    {
+        scheduleController.UserName = UserNameInput.text;
+    }
 
     /// <summary>
-    /// TODO need to be renamed
+    /// 
     /// </summary>
-    public async void Validate()
+    /// <return>
+    /// A boolean representing if the Input is valid
+    /// </return>
+    public virtual void Validate()
     {
         if (!IsInputValid())
-            await InvalidInput();
+            InvalidInput();
         else
         {
-            // TODO save the profile
-            // TODO this is going to throw an null reference exception
-            ScheduleController.LoadTimeTable($"{LastNameInput.text}_{FirstNameInput.text}");
+            Connect();
             // Go to the main menu screen
             OpenScreen(NextScreen);
             NextScreen.GetComponent<ModularScreenController>().SetMode("SignUp");

@@ -9,31 +9,28 @@ public class TextController : MonoBehaviour
     private LanguageController languageController;
     private Text text;
 
-    public string localizationString;
+    public string LocalizationString;
 
     void Awake()
     {
-        languageController = GameObject.Find("LanguageController").GetComponent<LanguageController>();
-        text = GetComponent<Text>();
-    }
+        languageController = LanguageController.Instance;
+        languageController.TextControllers.Add(this);
 
-    // Not the most efficient for sure, but it's not that bad either
-    // So for now, it'll do
-    void OnEnable()
-    {
+        text = GetComponent<Text>();
+        // Only needed once, because LanguageController will update this text again when needed
         UpdateText();
     }
 
     public void UpdateText()
     {
-        SetText(localizationString);
+        SetText(LocalizationString);
     }
 
     public void SetText(string localizationString)
     {
-        this.localizationString = localizationString;
+        LocalizationString = localizationString;
         // text might be null if SetText is called before this object is enabled
-        // This is not a problem tho, as it will only update the localization string and wiat for OnEnable to update the text
+        // This is not a problem tho, as it will only update the localization string and wait for OnEnable to update the text
         if (text != null)
             text.text = languageController.GetText(localizationString);
     }

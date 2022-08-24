@@ -29,14 +29,14 @@ namespace Services
 #if UNITY_EDITOR
                 xmlDocument.Load(path);
                 // To avoid the warning
-                await Task.Delay(0);
+                await Task.Yield();
                 return xmlDocument;
 #else
                 UnityWebRequest request = UnityWebRequest.Get(path);
                 var operation = request.SendWebRequest();
                 while (!operation.isDone)
                     // I am just as confused as you are
-                    await System.Threading.Tasks.Task.Yield();
+                    await Task.Yield();
                 if (!(request.result == UnityWebRequest.Result.Success))
                     throw new Exception($"ERROR: Something went REALLY wrong. Good luck :)");
                 else

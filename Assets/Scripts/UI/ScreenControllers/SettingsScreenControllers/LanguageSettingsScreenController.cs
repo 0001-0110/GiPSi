@@ -1,6 +1,6 @@
-using System;
 using System.Linq;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine.UI;
 
 using Services;
@@ -45,7 +45,7 @@ public class LanguageSettingsScreenController : ModularScreenController
     {
         languageTexts = languages.Values.ToList();
         LanguagesSelection.ClearOptions();
-        List<string> options = ListService.ForEach(languageTexts, languageText => LanguageController.GetText(languageText));
+        List<string> options = ListService.ForEach(languageTexts, languageText => LanguageController.GetText(languageText)).ToList();
         LanguagesSelection.AddOptions(options);
     }
 

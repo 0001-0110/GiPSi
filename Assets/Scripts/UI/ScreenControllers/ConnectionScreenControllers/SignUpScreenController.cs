@@ -1,12 +1,15 @@
 using System;
-using UnityEngine;
 using UnityEngine.UI;
+
+using Services;
 
 public class SignUpScreenController : ConnectionScreenController
 {
     public Dropdown BirthDayInput;
     public Dropdown BirthMonthInput;
     public Dropdown BirthYearInput;
+
+    public InputField ConfirmPasswordInput;
 
     public override void Start()
     {
@@ -22,6 +25,16 @@ public class SignUpScreenController : ConnectionScreenController
 
     protected override bool IsInputValid()
     {
-        return true;
+        return base.IsInputValid() && PasswordInput.text == ConfirmPasswordInput.text;
+    }
+
+    /// <summary>
+    /// Create the new user profile
+    /// </summary>
+    protected override void Connect()
+    {
+        base.Connect();
+        // TODO create new profile
+        string passwordHash = SecurityService.HashString(PasswordInput.text);
     }
 }

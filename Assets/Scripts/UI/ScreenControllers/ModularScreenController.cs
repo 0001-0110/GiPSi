@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class ModularScreenController : ScreenController
 {
+    private string currentMode;
+
     [Serializable]
     public class ScreenMode
     {
@@ -14,6 +16,7 @@ public class ModularScreenController : ScreenController
 
     public void SetMode(string mode)
     {
+        currentMode = mode;
         // Firts begins by deactivating all other modes
         foreach (ScreenMode screenMode in screenModes)
         {

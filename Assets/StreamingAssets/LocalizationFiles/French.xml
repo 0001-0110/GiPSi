@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <French>
     <string name="Text_AppName">GiPSi</string>
+
     <string name="Text_InvalidInput">Données invalides</string>
 
     <!--  -->
     <string name="InputField_FirstName">Prénom</string>
     <string name="InputField_LastName">Nom de famille</string>
     <string name="InputField_Password">Mot de passe</string>
+    <string name="InputField_ConfirmPassword">Mot de passe</string>
 
-    <string name="Button_Login">Connexion</string>
+    <string name="Button_LogIn">Connexion</string>
+    <string name="Button_SignUp">Inscription</string>
+    <string name="Button_Next">Suivant</string>
     <string name="Button_Back">Retour</string>
     <string name="Button_InvalidInput">Données invalides</string>
     <string name="Button_SetDestination">Choisir une destination</string>

@@ -18,12 +18,11 @@ namespace Services
             return min;
         }
 
-        public static List<U> ForEach<T, U>(List<T> list, Func<T, U> converter)
+        public static IEnumerable<U> ForEach<T, U>(List<T> list, Func<T, U> converter)
         {
-            List<U> result = new List<U>();
             foreach (T item in list)
-                result.Add(converter(item));
-            return result;
+                yield return converter(item);
+            yield break;
         }
 
         /// <summary>

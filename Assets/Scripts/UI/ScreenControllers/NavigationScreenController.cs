@@ -50,7 +50,7 @@ public class NavigationScreenController : ModularScreenController
         }
         else
         {
-            // TODO This line is sus
+            // This line is sus
             Direction nextDirection = PathFindingService.GetDirection(currentNode, currentNode = path.Pop(), path.Peek());
             BackgroundImage.sprite = currentNode.Sprite;
             DirectionImage.sprite = Sprites[(int)nextDirection];
@@ -61,6 +61,7 @@ public class NavigationScreenController : ModularScreenController
 
     public bool StartNavigation(Node startingNode, Node destinationNode)
     {
+        Debug.Log($"DEBUG: NAVIGATION - goint from {startingNode} to {destinationNode}");
         SetMode("Navigating");
         path = navMesh.GetSimplifiedPath(startingNode, destinationNode);
         currentNode = path.Pop();

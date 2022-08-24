@@ -59,10 +59,9 @@ public class QRCodeReader : MonoBehaviour
 
         foreach (WebCamDevice camera in cameras)
         {
-            // TODO remove true
-            if (!camera.isFrontFacing || true)
+            if (!camera.isFrontFacing)
             {
-                Debug.Log($"DEBUG - 22 | Suitable camera found");
+                Debug.Log($"DEBUG: CAMERA - Suitable camera found");
                 isCamAvailable = true;
                 cameraTexture = new WebCamTexture(camera.name, Screen.height, Screen.width);
                 // Play the video from the camera on the texture
@@ -78,7 +77,7 @@ public class QRCodeReader : MonoBehaviour
             }
         }
         // No suitable camera found
-        Debug.LogWarning($"WARNING: No suitable camera found");
+        Debug.LogWarning($"WARNING: CAMERA - No suitable camera found");
         ScanningScreenController.DisplayText($"No suitable camera found");
     }
 
@@ -102,7 +101,7 @@ public class QRCodeReader : MonoBehaviour
         return result?.ToString();
     }
 
-    public async void Scan()
+    public void Scan()
     {
         if (!isCamAvailable)
         {
