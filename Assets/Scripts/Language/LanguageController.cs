@@ -8,6 +8,7 @@ public class LanguageController : MonoBehaviour
 {
     public static LanguageController Instance { get; private set; }
 
+    public bool IsReady { get; private set; }
     public Language CurrentLanguage { get; private set; }
     public Dictionary<string, string> LocalizationStrings { get; private set; }
     public List<TextController> TextControllers;
@@ -19,6 +20,8 @@ public class LanguageController : MonoBehaviour
             // TODO Warning
         }
         Instance = this;
+
+        IsReady = false;
 
         if (PlayerPrefs.HasKey("Language"))
             SetLanguage(PlayerPrefs.GetInt("Language"));
@@ -52,6 +55,10 @@ public class LanguageController : MonoBehaviour
     /// </remarks>
     public async void SetLanguage(Language language)
     {
+        if (language == CurrentLanguage)
+            // No need to load the same language again
+            return;
+        IsReady = false;
         // If the language is not defined, trying to load could create many errors
         if (!Enum.IsDefined(typeof(Language), language))
             throw new ArgumentException("I don't speak Klingon");
@@ -68,6 +75,7 @@ public class LanguageController : MonoBehaviour
                 LocalizationStrings.Add(node.Attributes["name"].Value, node.InnerText);
             }
         }
+        IsReady = true;
         UpdateAllTextControllers();
     }
 
@@ -85,11 +93,13 @@ public class LanguageController : MonoBehaviour
 
     public string GetText(string localizationString)
     {
-        if (!LocalizationStrings.ContainsKey(localizationString))
+        // TODO better
+        if (!IsReady || !LocalizationStrings.ContainsKey(localizationString) || LocalizationStrings[localizationString] == string.Empty)
         {
             // If there is no translation available
-            // This could be due to the translation not being loaded yet
-            Debug.LogWarning($"WARNING: Language - Missing translation for {localizationString}");
+            if (IsReady)
+                // Issue a warning only if the language is ready, but no translation is found
+                Debug.LogWarning($"WARNING: Language - Missing translation for {localizationString}");
             return localizationString;
         }
         else

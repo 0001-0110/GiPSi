@@ -10,6 +10,7 @@ public class NavigationScreenController : ModularScreenController
     public NavMesh navMesh;
     private Stack<Node> path;
     private Node currentNode;
+    public Destination Destination { get; set; }
 
     public Image BackgroundImage;
     public Image DirectionImage;

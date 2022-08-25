@@ -198,6 +198,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228992}
   m_CullTransparentMesh: 1
+--- !u!1 &5175076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5175077}
+  - component: {fileID: 5175079}
+  - component: {fileID: 5175078}
+  m_Layer: 5
+  m_Name: ToiletsButtonImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5175077
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5175076}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1416445296}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 150.00002}
+  m_SizeDelta: {x: -28, y: -28}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5175078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5175076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.7900574, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &5175079
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5175076}
+  m_CullTransparentMesh: 1
 --- !u!1 &6333888
 GameObject:
   m_ObjectHideFlags: 0
@@ -4211,7 +4286,7 @@ MonoBehaviour:
   UserNameInput: {fileID: 747184975}
   PasswordInput: {fileID: 357580821}
   TextController: {fileID: 1024700023}
-  InvalidText: Button_SignUpInvalid
+  InvalidText: Button_InvalidInput
   NextScreen: {fileID: 1390130387}
   BirthDayInput: {fileID: 645633669}
   BirthMonthInput: {fileID: 1282011962}
@@ -7188,6 +7263,10 @@ PrefabInstance:
       value: Scan
       objectReference: {fileID: 0}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
+      propertyPath: LocalizationString
+      value: Button_Scan
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: localizationString
       value: Button_Scan
       objectReference: {fileID: 0}
@@ -8740,7 +8819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: InputField_FirstName
+  LocalizationString: InputField_UserName
 --- !u!222 &675029896
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8905,7 +8984,7 @@ MonoBehaviour:
   UserNameInput: {fileID: 177222034}
   PasswordInput: {fileID: 1639623280}
   TextController: {fileID: 987123085}
-  InvalidText: Button_LogInInvalid
+  InvalidText: Button_InvalidInput
   NextScreen: {fileID: 389507792}
 --- !u!1001 &685186561
 PrefabInstance:
@@ -9037,6 +9116,10 @@ PrefabInstance:
     - target: {fileID: 3112307719132610298, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: m_Text
       value: Back
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
+      propertyPath: LocalizationString
+      value: Button_Back
       objectReference: {fileID: 0}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: localizationString
@@ -9525,7 +9608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: InputField_LastName
 --- !u!1 &712301338
 GameObject:
   m_ObjectHideFlags: 0
@@ -9781,8 +9864,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 200, y: -500}
-  m_SizeDelta: {x: 200, y: 128}
+  m_AnchoredPosition: {x: 200, y: -525}
+  m_SizeDelta: {x: 250, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &716118374
 MonoBehaviour:
@@ -10220,7 +10303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Text_AppName
 --- !u!1001 &747144586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11339,7 +11422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Text_ClassSelection
 --- !u!114 &783007405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13868,7 +13951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Button_Back
 --- !u!114 &970616824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14493,7 +14576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Button_Next
 --- !u!114 &993958858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15272,7 +15355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Button_SignUp
 --- !u!1001 &1026422281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15438,7 +15521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Text_InvalidInput
 --- !u!1 &1034863761
 GameObject:
   m_ObjectHideFlags: 0
@@ -15769,7 +15852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: InputField_UserName
 --- !u!1 &1050348951
 GameObject:
   m_ObjectHideFlags: 0
@@ -16532,6 +16615,10 @@ PrefabInstance:
     - target: {fileID: 3112307719132610298, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: m_Text
       value: Back
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
+      propertyPath: LocalizationString
+      value: Button_Back
       objectReference: {fileID: 0}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: localizationString
@@ -18131,7 +18218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: InputField_ConfirmPassword
 --- !u!114 &1256599076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18441,7 +18528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Text_SendSOS
 --- !u!114 &1272189477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20173,7 +20260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Button_Back
 --- !u!114 &1412518320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20424,6 +20511,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3112307717083090275, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112307719132610297, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -21328,7 +21419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Text_AppName
 --- !u!1 &1471037070
 GameObject:
   m_ObjectHideFlags: 0
@@ -21623,6 +21714,14 @@ PrefabInstance:
     - target: {fileID: 3112307717083090275, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112307719132610298, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
+      propertyPath: m_Text
+      value: Send
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
+      propertyPath: LocalizationString
+      value: Button_SendSOS
       objectReference: {fileID: 0}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: localizationString
@@ -22839,7 +22938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Button_Next
 --- !u!114 &1553011362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23007,7 +23106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Button_Back
 --- !u!114 &1578494292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23236,7 +23335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: InputField_Password
 --- !u!1 &1593779778
 GameObject:
   m_ObjectHideFlags: 0
@@ -23555,7 +23654,7 @@ GameObject:
   - component: {fileID: 1621156437}
   - component: {fileID: 1621156436}
   m_Layer: 5
-  m_Name: LoginButton
+  m_Name: LogInButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25372,6 +25471,10 @@ PrefabInstance:
       value: Start
       objectReference: {fileID: 0}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
+      propertyPath: LocalizationString
+      value: Button_Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: localizationString
       value: Button_StartNavigation
       objectReference: {fileID: 0}
@@ -26834,8 +26937,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: -500}
-  m_SizeDelta: {x: 200, y: 128}
+  m_AnchoredPosition: {x: -200, y: -525}
+  m_SizeDelta: {x: 250, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1814000870
 MonoBehaviour:
@@ -27754,6 +27857,10 @@ PrefabInstance:
       value: Next Step
       objectReference: {fileID: 0}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
+      propertyPath: LocalizationString
+      value: Button_NextStep
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: localizationString
       value: Button_NextStep
       objectReference: {fileID: 0}
@@ -28381,6 +28488,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3112307717083090275, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112307719132610297, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -29869,6 +29980,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
   m_PrefabInstance: {fileID: 1427698734}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2018093031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2018093032}
+  - component: {fileID: 2018093034}
+  - component: {fileID: 2018093033}
+  m_Layer: 5
+  m_Name: ButtonImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2018093032
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018093031}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1886447791}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -175, y: 150.00002}
+  m_SizeDelta: {x: -28, y: -28}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2018093033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018093031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.7900574, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2018093034
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018093031}
+  m_CullTransparentMesh: 1
 --- !u!1 &2023932760
 GameObject:
   m_ObjectHideFlags: 0
@@ -31596,6 +31782,14 @@ PrefabInstance:
     - target: {fileID: 3112307717083090275, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112307719132610298, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
+      propertyPath: m_Text
+      value: Back
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
+      propertyPath: LocalizationString
+      value: Button_Back
       objectReference: {fileID: 0}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: localizationString

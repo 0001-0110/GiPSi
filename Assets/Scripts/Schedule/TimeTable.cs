@@ -10,6 +10,15 @@ namespace Schedule
     {
         public List<Period> Periods;
 
+        // TODO move this to a proper location (or remove it)
+        private static T GetRandomEnumValue<T>()
+        {
+            if (!typeof(T).IsEnum)
+                throw new ArgumentException("This method only takes Enum types");
+            Array values = Enum.GetValues(typeof(T));
+            return (T)values.GetValue(new Random().Next(values.Length));
+        }
+
         /// <summary>
         /// This class is supposed to be instantiated from Init only, not from the constructor
         /// </summary>
@@ -19,7 +28,9 @@ namespace Schedule
 
             // TODO remove this once we can import TimeTables
             // Adding periods for tests
-            //Periods.Add(new Period());
+            Periods.Add(new Period(GetRandomEnumValue<Subject>(), DateTime.Now, DateTime.Now.AddMinutes(6), Destination.Room207));
+            Periods.Add(new Period(GetRandomEnumValue<Subject>(), DateTime.Now.AddMinutes(6), DateTime.Now.AddMinutes(7), GetRandomEnumValue<Destination>()));
+            Periods.Add(new Period(GetRandomEnumValue<Subject>(), DateTime.Now.AddMinutes(7), DateTime.Now.AddMinutes(60), GetRandomEnumValue<Destination>()));
         }
 
         /// <summary>
@@ -28,19 +39,6 @@ namespace Schedule
         public TimeTable(List<Period> periods) 
         {
             Periods = periods;
-        }
-
-        public string ToJson()
-        {
-            // TODO
-            //return string.Join("\n", ListService.ForEach(Periods, period => period.ToJson()));
-            throw new NotImplementedException();
-        }
-
-        public static TimeTable FromJson(string json)
-        {
-            // TODO
-            throw new NotImplementedException();
         }
 
         /// <summary>

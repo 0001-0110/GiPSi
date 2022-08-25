@@ -19,17 +19,10 @@ public class PositionScreenController : ScreenController
     public GameObject NavigationScreen;
     private NavigationScreenController navigationScreenController;
 
-    private Destination destination;
-
     public override void Start()
     {
         navigationScreenController = NavigationScreen.GetComponent<NavigationScreenController>();
         startNavigationButtonTextController = StartNavigationButton.GetComponentInChildren<TextController>();
-    }
-
-    public void SetDestination(Destination destination)
-    {
-        this.destination = destination;
     }
 
     private async Task InvalidInput()
@@ -44,8 +37,9 @@ public class PositionScreenController : ScreenController
 
     public async void StartNavigation()
     {
-        Node startingNode = navMesh.GetNode(PositionInput.text);
-        Node destinationNode = navMesh.GetNode(startingNode, destination);
+        // TODO using the user input directly is not the best way, requires a strict format to function properly
+        Node startingNode = navMesh.GetNode(PositionInput.text.ToUpper());
+        Node destinationNode = navMesh.GetNode(startingNode, navigationScreenController.Destination);
         if (startingNode != null && destinationNode != null)
         {
             // Navigation started correctly

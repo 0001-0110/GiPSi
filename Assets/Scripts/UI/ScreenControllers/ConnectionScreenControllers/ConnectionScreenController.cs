@@ -85,7 +85,6 @@ public abstract class ConnectionScreenController : ScreenController
             Connect();
             // Go to the main menu screen
             OpenScreen(NextScreen);
-            NextScreen.GetComponent<ModularScreenController>().SetMode("SignUp");
         }
     }
 }

@@ -6,7 +6,7 @@ using Schedule;
 public class MainMenuController : ScreenController
 {
     public GameObject PositionScreen;
-    private PositionScreenController positionScreenController;
+    public NavigationScreenController NavigationScreenController;
 
     private ScheduleController scheduleController;
     
@@ -14,22 +14,20 @@ public class MainMenuController : ScreenController
 
     public override void Start()
     {
-        positionScreenController = PositionScreen.GetComponent<PositionScreenController>();
-
         scheduleController = ScheduleController.Instance;
     }
 
     public void StartNavigation(int destinationIndex)
     {
-        Debug.Log($"DEBUG - 22 | {(Destination)destinationIndex}");
-        positionScreenController.SetDestination((Destination)destinationIndex);
+        Debug.Log($"DEBUG: Navigation - The destination is {(Destination)destinationIndex}");
+        NavigationScreenController.Destination = (Destination)destinationIndex;
         OpenScreen(PositionScreen);
     }
 
     public void StartNavigation(Destination destination)
     {
-        Debug.Log($"DEBUG - 22 | {destination}");
-        positionScreenController.SetDestination(destination);
+        Debug.Log($"DEBUG: Navigation - The destination is {destination}");
+        NavigationScreenController.Destination = destination;
         OpenScreen(PositionScreen);
     }
 

@@ -4,7 +4,8 @@ public class LogInScreenController : ConnectionScreenController
 {
     private bool IsPasswordCorrect()
     {
-        throw new System.NotImplementedException();
+        // TODO
+        return true;
         //return SecurityService.HashString(PasswordInput.text) == 
     }
 

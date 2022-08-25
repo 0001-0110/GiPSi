@@ -1,8 +1,6 @@
 using System;
 using System.IO;
-using System.Collections.Generic;
 using UnityEngine;
-using Newtonsoft.Json;
 
 using Pathfinding;
 using Schedule;
@@ -52,6 +50,7 @@ public class ScheduleController : MonoBehaviour
     {
         TimeTable = JsonService.Deserialize<TimeTable>(FilePath(UserName));
         if (TimeTable == null)
+            // No file corresponding to the current user was found
             TimeTable = new TimeTable();
     }
 
