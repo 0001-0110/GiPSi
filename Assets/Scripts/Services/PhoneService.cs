@@ -8,17 +8,15 @@ namespace Services
         public static void SendSMS(string mobileNumber, string message)
         {
 #if UNITY_ANDROID
-            string URL = $"sms:{mobileNumber}?body={message}";
-#else
-
+            Application.OpenURL($"sms:{mobileNumber}?body={message}");
+            return;
+#endif
 #if UNITY_IOS
-            string URL = $"sms:{mobileNumber}?&body={UnityWebRequest.EscapeURL(message)}";
-#else
+            Application.OpenURL($"sms:{mobileNumber}?&body={UnityWebRequest.EscapeURL(message)}");
+            return;
+#endif
+            // Not a phone
             throw new Exception($"What are you trying to achieve exaclty ?");
-#endif
-#endif
-            //Execute Text Message
-            Application.OpenURL(URL);
         }
     }
 }

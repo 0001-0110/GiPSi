@@ -17,10 +17,10 @@ public class NavigationScreenController : ModularScreenController
     public TextController DirectionText;
     public AudioSource DirectionAudioSource;
 
-    [Tooltip("The order of the sprite is important: must be in the same order as the directions, and end with the one to display when the destination is reached")]
+    [Tooltip("The order of the sprites is important: must be in the same order as the directions. Must end with the one to display when the destination is reached")]
     [NonReorderable]
     public Sprite[] Sprites;
-    [Tooltip("The order of the audios is important: must be in the same order as the directions, and end with the one to play when the destination is reached")]
+    [Tooltip("The order of the audios is important: must be in the same order as the directions. Must end with the one to play when the destination is reached")]
     [NonReorderable]
     public AudioClip[] AudioClips;
 

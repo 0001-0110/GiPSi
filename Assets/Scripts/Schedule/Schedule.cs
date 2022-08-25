@@ -1,5 +1,3 @@
-using System;
-
 namespace Schedule
 {
     public enum Subject

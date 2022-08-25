@@ -2,8 +2,6 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
-using Pathfinding;
-
 public class PositionScreenController : ScreenController
 {
     public NavMesh navMesh;
