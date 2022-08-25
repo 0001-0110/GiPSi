@@ -1,11 +1,16 @@
+using UnityEngine;
 using Services;
 
 public class SOSScreenController : ScreenController
 {
-    public string MobileNumber;
+    [Tooltip("The list of all numbers to send the message to")]
+    public string[] MobileNumbers;
+    [Tooltip("The message sent")]
+    public string SOSMessage;
 
-    public void SendSOS(string message)
+    public void SendSOS()
     {
-        PhoneService.SendSMS(MobileNumber, message);
+        foreach (string mobileNumber in MobileNumbers)
+            PhoneService.SendSMS(mobileNumber, SOSMessage);
     }
 }
