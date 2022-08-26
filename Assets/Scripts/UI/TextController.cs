@@ -17,12 +17,20 @@ public class TextController : MonoBehaviour
         languageController.TextControllers.Add(this);
 
         text = GetComponent<Text>();
+
+        
+
         // Only needed once, because LanguageController will update this text again when needed
         UpdateText();
     }
 
     public void UpdateText()
     {
+        if (LocalizationString == string.Empty)
+        {
+            Debug.LogWarning("WARNING: Language - Missing localization string", gameObject);
+            return;
+        }
         SetText(LocalizationString);
     }
 
@@ -32,6 +40,8 @@ public class TextController : MonoBehaviour
         // text might be null if SetText is called before this object is enabled
         // This is not a problem tho, as it will only update the localization string and wait for OnEnable to update the text
         if (text != null)
+        {
             text.text = languageController.GetText(localizationString);
+        }
     }
 }

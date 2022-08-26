@@ -2968,7 +2968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Text_BoardingSelection
 --- !u!114 &234006083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4201,7 +4201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Button_Next
 --- !u!114 &300420525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5943,7 +5943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Text_ClassSelection
 --- !u!114 &411050963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6930,7 +6930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Text_HandicapSelection
 --- !u!114 &497281640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12496,7 +12496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Button_Next
 --- !u!114 &810932702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13891,7 +13891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Button_Back
 --- !u!114 &893375836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19074,6 +19074,7 @@ GameObject:
   - component: {fileID: 1197873588}
   - component: {fileID: 1197873590}
   - component: {fileID: 1197873589}
+  - component: {fileID: 1197873591}
   m_Layer: 5
   m_Name: SignedUpText
   m_TagString: Untagged
@@ -19142,6 +19143,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197873587}
   m_CullTransparentMesh: 1
+--- !u!114 &1197873591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197873587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationString: Text_SignedUp
 --- !u!1 &1209331500
 GameObject:
   m_ObjectHideFlags: 0
@@ -30602,7 +30616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Button_Next
 --- !u!114 &1899554194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32443,7 +32457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Button_Back
 --- !u!114 &2043643147
 MonoBehaviour:
   m_ObjectHideFlags: 0
