@@ -1,42 +1,71 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class ModularScreenController : ScreenController
+
+public enum ScreenMode
 {
-    private string currentMode;
+    SignUp = 0,
+    Settings = 10,
+    Navigating = 20,
+    DestinationReached = 30,
+}
+
+public abstract class ModularScreenController : ScreenController
+{
+    private static ScreenMode activeScreenMode;
+    //private static List<ModularScreenController> modularScreenControllers = new List<ModularScreenController>();
 
     [Serializable]
-    public class ScreenMode
+    public class ScreenConfiguration
     {
-        public string mode;
+        public ScreenMode screenMode;
         public GameObject[] gameObjects;
     }
 
-    public ScreenMode[] screenModes;
+    public ScreenConfiguration[] screenConfigurations;
 
-    public void SetMode(string mode)
+    public override void Awake()
     {
-        currentMode = mode;
+        base.Awake();
+        //modularScreenControllers.Add(this);
+    }
+
+    public override void OnEnable()
+    {
+        base.OnEnable();
+        UpdateMode();
+    }
+
+    public void UpdateMode()
+    {
         // Firts begins by deactivating all other modes
-        foreach (ScreenMode screenMode in screenModes)
+        foreach (ScreenConfiguration screenConfiguration in screenConfigurations)
         {
-            if (screenMode.mode != mode)
+            if (screenConfiguration.screenMode != activeScreenMode)
             {
-                foreach (GameObject gameObject in screenMode.gameObjects)
+                foreach (GameObject gameObject in screenConfiguration.gameObjects)
                     gameObject.SetActive(false);
             }
         }
         // Then activate the correct mode
         // activation is after deactivation to avoid conflicts in case one of the gameObjects is in multiple modes
-        foreach (ScreenMode screenMode in screenModes)
+        foreach (ScreenConfiguration screenConfiguration in screenConfigurations)
         {
-            if (screenMode.mode == mode)
+            if (screenConfiguration.screenMode == activeScreenMode)
             {
-                foreach (GameObject gameObject in screenMode.gameObjects)
+                foreach (GameObject gameObject in screenConfiguration.gameObjects)
                     gameObject.SetActive(true);
                 return;
             }
         }
-        Debug.LogWarning($"WARNING: {this} has no mode corresponding to {mode}");
+        Debug.LogWarning($"WARNING: {this} has no screen configuration corresponding to {activeScreenMode}");
+    }
+
+    public static void SetMode(ScreenMode screenMode)
+    {
+        activeScreenMode = screenMode;
+        /*foreach (ModularScreenController modularScreenController in modularScreenControllers)
+            modularScreenController.UpdateMode();*/
     }
 }

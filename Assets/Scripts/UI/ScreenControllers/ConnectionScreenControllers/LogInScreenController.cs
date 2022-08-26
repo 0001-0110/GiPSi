@@ -3,6 +3,7 @@ using UnityEngine;
 public class LogInScreenController : ConnectionScreenController
 {
     private const string userNamePreference = "UserName";
+    public static string UserNamePreference { get { return userNamePreference; } }
 
     public override void OnEnable()
     {
@@ -36,6 +37,6 @@ public class LogInScreenController : ConnectionScreenController
     {
         base.Connect();
         scheduleController.LoadTimeTable();
-        PlayerPrefs.SetString(userNamePreference, UserNameInput.text);
+        // TODO
     }
 }

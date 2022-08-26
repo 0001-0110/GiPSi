@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public abstract class ConnectionScreenController : ScreenController
 {
+    public static User User { get; protected set; }
+
     protected ScheduleController scheduleController;
 
     public InputField UserNameInput;
@@ -85,6 +87,7 @@ public abstract class ConnectionScreenController : ScreenController
             Connect();
             // Go to the main menu screen
             OpenScreen(NextScreen);
+            PlayerPrefs.SetString(LogInScreenController.UserNamePreference, UserNameInput.text);
         }
     }
 }

@@ -36,5 +36,6 @@ public class SignUpScreenController : ConnectionScreenController
         base.Connect();
         // TODO create new profile
         string passwordHash = SecurityService.HashString(PasswordInput.text);
+        User = new User(UserNameInput.text, passwordHash);
     }
 }

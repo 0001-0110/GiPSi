@@ -52,7 +52,7 @@ public class NavigationScreenController : ModularScreenController
             // Destination reached
             DirectionImage.sprite = Sprites[Sprites.Length - 1];
             DirectionText.SetText("Direction_DestinationReached");
-            SetMode("DestinationReached");
+            SetMode(ScreenMode.DestinationReached);
             DirectionAudioSource.PlayOneShot(AudioClips[AudioClips.Length - 1]);
         }
         else
@@ -69,7 +69,7 @@ public class NavigationScreenController : ModularScreenController
     public bool StartNavigation(Node startingNode, Node destinationNode)
     {
         Debug.Log($"DEBUG: NAVIGATION - going from {startingNode} to {destinationNode}");
-        SetMode("Navigating");
+        SetMode(ScreenMode.Navigating);
         path = navMesh.GetSimplifiedPath(startingNode, destinationNode);
         currentNode = path.Pop();
         NextStep();

@@ -58,4 +58,9 @@ public class ScreenController : MonoBehaviour
         screen.GetComponent<ScreenController>().SetMode(mode);
         OpenScreen(screen);
     }*/
+
+    public void SetMode(int screenModeIndex)
+    {
+        ModularScreenController.SetMode((ScreenMode)screenModeIndex);
+    }
 }
