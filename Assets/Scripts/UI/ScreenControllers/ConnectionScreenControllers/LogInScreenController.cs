@@ -1,5 +1,16 @@
+using UnityEngine;
+
 public class LogInScreenController : ConnectionScreenController
 {
+    private const string userNamePreference = "UserName";
+
+    public override void OnEnable()
+    {
+        base.OnEnable();
+        if (PlayerPrefs.HasKey(userNamePreference))
+            UserNameInput.text = PlayerPrefs.GetString(userNamePreference);
+    }
+
     private bool IsPasswordCorrect()
     {
         // TODO
@@ -25,5 +36,6 @@ public class LogInScreenController : ConnectionScreenController
     {
         base.Connect();
         scheduleController.LoadTimeTable();
+        PlayerPrefs.SetString(userNamePreference, UserNameInput.text);
     }
 }
