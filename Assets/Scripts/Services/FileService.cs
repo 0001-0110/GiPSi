@@ -1,8 +1,8 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Xml;
 using System.Threading.Tasks;
 using UnityEngine;
+// UnityEngine.Networking is necessary even if its written as unused, do not remove (used in LoadXml)
 using UnityEngine.Networking;
 
 namespace Services
