@@ -1,33 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <French>
+    <!-- General -->
     <string name="Text_AppName">GiPSi</string>
-
+    <string name="Button_Next">Suivant</string>
+    <string name="Button_Back">Retour</string>
     <string name="Text_InvalidInput">Données invalides</string>
 
-    <!--  -->
+    <!-- Log In and Sign Up -->
     <string name="InputField_UserName">Nom d'utilisateur</string>
     <string name="InputField_FirstName">Prénom</string>
     <string name="InputField_LastName">Nom de famille</string>
     <string name="InputField_Password">Mot de passe</string>
     <string name="InputField_ConfirmPassword">Confirmation</string>
-
     <string name="Button_LogIn">Connexion</string>
     <string name="Button_SignUp">Inscription</string>
-    <string name="Button_Next">Suivant</string>
-    <string name="Button_Back">Retour</string>
-    <string name="Button_Start">Demarrer</string>
     <string name="Button_InvalidInput">Données invalides</string>
-    <string name="Button_SetDestination">Choisir une destination</string>
-    <string name="Button_Settings">Parametres</string>
     <string name="Button_Disconnect">Se deconnecter</string>
 
+    <!-- Settings -->
+    <string name="Button_Settings">Parametres</string>
+    <string name="Button_UpdateProfile">Metter a jour le profil</string>
+    <string name="Button_UpdateTimeTable">Metter a jour l'emploi du temps</string>
+    <string name="Button_LanguageSettings">Changer la langue</string>
     <string name="Text_ClassSelection">Selectionnez votre classe</string>
     <string name="Text_SectionSelection"></string>
     <string name="Text_BoardSelection">Selectionnez votre regime</string>
     <string name="Text_HandicapSelection">Avez vous des handicapes ?</string>
     <string name="Text_SignedUp">Votre profil est complet, bienvenue !</string>
 
+    <!-- PositionScreen -->
+    <string name="Text_PositionInput">Quelle est votre position ?</string>
+    <string name="InputField_PositionInput">Position</string>
+
     <!-- NavigationScreen -->
+    <string name="Button_SetDestination">Choisir une destination</string>
+    <string name="Button_Start">Demarrer</string>
     <string name="Button_NextStep">Etape suivante</string>
     <string name="Button_UpdatePosition">Choisir la position</string>
     <string name="Direction_Forward">Continuez tout droit</string>
@@ -35,7 +42,7 @@
     <string name="Direction_Backward">Faites demi tour</string>
     <string name="Direction_Right">Tournez à droite</string>
     <string name="Direction_Up">Montez les escaliers</string>
-    <string name="Direction_Down">Montez les escaliers</string>
+    <string name="Direction_Down">Descendez les escaliers</string>
     <string name="Direction_DestinationReached">Destination atteinte</string>
 
     <!-- SOSScreen -->

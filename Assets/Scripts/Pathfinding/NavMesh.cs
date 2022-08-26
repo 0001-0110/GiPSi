@@ -13,11 +13,6 @@ public class NavMesh : MonoBehaviour
 
     private Dictionary<Destination, List<Node>> destinations;
 
-    public void OnDrawGizmos()
-    {
-
-    }
-
     public void Start()
     {
         nodes = new List<Node>();

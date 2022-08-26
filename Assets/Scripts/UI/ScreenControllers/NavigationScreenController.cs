@@ -28,15 +28,20 @@ public class NavigationScreenController : ModularScreenController
     {
         if (path == null)
             return;
+        foreach (Node node in path)
+        {
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawSphere(node.Position, 0.75f);
+        }
         if (currentNode != null)
         {
             Gizmos.color = Color.blue;
             Gizmos.DrawSphere(currentNode.Position, 0.75f);
         }
-        foreach (Node node in path)
+        if (path.Count > 0)
         {
-            Gizmos.color = Color.cyan;
-            Gizmos.DrawSphere(node.Position, 0.75f);
+            Gizmos.color = Color.white;
+            Gizmos.DrawSphere(path.Peek().Position, 0.75f);
         }
     }
 
@@ -53,7 +58,7 @@ public class NavigationScreenController : ModularScreenController
         {
             // This line is sus
             Direction nextDirection = PathFindingService.GetDirection(currentNode, currentNode = path.Pop(), path.Peek());
-            BackgroundImage.sprite = currentNode.Sprite;
+            BackgroundImage.sprite = path.Peek().Sprite;
             DirectionImage.sprite = Sprites[(int)nextDirection];
             DirectionText.SetText($"Direction_{nextDirection}");
             //DirectionAudioSource.PlayOneShot(AudioClips[(int)nextDirection]);
@@ -62,7 +67,7 @@ public class NavigationScreenController : ModularScreenController
 
     public bool StartNavigation(Node startingNode, Node destinationNode)
     {
-        Debug.Log($"DEBUG: NAVIGATION - goint from {startingNode} to {destinationNode}");
+        Debug.Log($"DEBUG: NAVIGATION - going from {startingNode} to {destinationNode}");
         SetMode("Navigating");
         path = navMesh.GetSimplifiedPath(startingNode, destinationNode);
         currentNode = path.Pop();

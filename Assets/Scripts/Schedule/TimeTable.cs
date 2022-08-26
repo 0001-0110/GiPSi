@@ -27,9 +27,7 @@ namespace Schedule
 
             // TODO remove this once we can import TimeTables
             // Adding periods for tests
-            Periods.Add(new Period(GetRandomEnumValue<Subject>(), DateTime.Now, DateTime.Now.AddMinutes(6), Destination.Room207));
-            Periods.Add(new Period(GetRandomEnumValue<Subject>(), DateTime.Now.AddMinutes(6), DateTime.Now.AddMinutes(7), GetRandomEnumValue<Destination>()));
-            Periods.Add(new Period(GetRandomEnumValue<Subject>(), DateTime.Now.AddMinutes(7), DateTime.Now.AddMinutes(60), GetRandomEnumValue<Destination>()));
+            Periods.Add(new Period(GetRandomEnumValue<Subject>(), DateTime.Now, DateTime.Now.AddMinutes(50), Destination.Room207));
         }
 
         /// <summary>

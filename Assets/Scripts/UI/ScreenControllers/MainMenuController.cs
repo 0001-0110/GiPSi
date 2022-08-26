@@ -6,7 +6,6 @@ public class MainMenuController : ScreenController
 {
     public GameObject PositionScreen;
     public NavigationScreenController NavigationScreenController;
-
     private ScheduleController scheduleController;
     
     public ScanningScreenController ScanningScreenController;

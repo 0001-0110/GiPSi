@@ -7,8 +7,7 @@ namespace Pathfinding
     {
         None,
         Cafetaria,
-        CPE1,
-        CPE2,
+        CPE,
         Infirmary,
         Library,
         Toilets,
