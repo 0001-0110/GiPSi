@@ -10,6 +10,9 @@ public class TextController : MonoBehaviour
     private Text text;
 
     public string LocalizationString;
+    // TODO add the option to give this text controller a formated localization string
+    //public string FormatLocalizationString;
+    //public string[] LocalizationStrings;
 
     void Awake()
     {
@@ -17,8 +20,6 @@ public class TextController : MonoBehaviour
         languageController.TextControllers.Add(this);
 
         text = GetComponent<Text>();
-
-        
 
         // Only needed once, because LanguageController will update this text again when needed
         UpdateText();

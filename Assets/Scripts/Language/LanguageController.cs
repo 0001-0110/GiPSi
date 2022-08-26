@@ -72,8 +72,9 @@ public class LanguageController : MonoBehaviour
         {
             foreach (XmlNode node in await LoadLocalizationFile(fileName))
             {
-                // "name" is the attribute containing the localization string in the xml file
-                LocalizationStrings.Add(node.Attributes["name"].Value, node.InnerText);
+                if (node.InnerText != string.Empty)
+                    // "name" is the attribute containing the localization string in the xml file
+                    LocalizationStrings.Add(node.Attributes["name"].Value, node.InnerText);
             }
         }
         IsReady = true;
@@ -95,7 +96,7 @@ public class LanguageController : MonoBehaviour
     public string GetText(string localizationString)
     {
         // TODO better
-        if (!IsReady || !LocalizationStrings.ContainsKey(localizationString) || LocalizationStrings[localizationString] == string.Empty)
+        if (!IsReady || !LocalizationStrings.ContainsKey(localizationString))
         {
             // If there is no translation available
             if (IsReady)
