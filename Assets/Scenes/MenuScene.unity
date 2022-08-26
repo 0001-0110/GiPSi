@@ -1971,6 +1971,10 @@ PrefabInstance:
       value: NodeCorridor04
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 44856d1ca9ed33d4ab70c2ec960d754b, type: 3}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -3237,6 +3241,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NodeCorridor05
       objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d98f05e6bd31104fa03d894cd95922a, type: 3}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
       value: 4
@@ -11946,6 +11954,10 @@ PrefabInstance:
       value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Destination
       value: 110
       objectReference: {fileID: 0}
@@ -17889,6 +17901,10 @@ PrefabInstance:
       value: Node_Corridor3
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 83aac9a5d8c121d419932b3da53ffb09, type: 3}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -19621,6 +19637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node_Stairs1
       objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b5abe8f9f8634904cbfed1af77c2cf29, type: 3}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
       value: 2
@@ -23040,6 +23060,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node_Stairs1
       objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1c1e631d89ffe9a4b9d0e737073856f8, type: 3}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
       value: 2
@@ -31727,6 +31751,10 @@ PrefabInstance:
       value: Node_Corridor1
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b8df0c8f68d8624ba49e83a4f1b858b, type: 3}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -32447,7 +32475,7 @@ PrefabInstance:
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c0e0deafe6f1df64d9832b7cb16d29d0, type: 3}
+      objectReference: {fileID: 21300000, guid: 6d98f05e6bd31104fa03d894cd95922a, type: 3}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Destination
       value: 101

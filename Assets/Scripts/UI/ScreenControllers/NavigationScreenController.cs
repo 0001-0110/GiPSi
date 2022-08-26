@@ -59,7 +59,7 @@ public class NavigationScreenController : ModularScreenController
         {
             // This line is sus
             Direction nextDirection = PathFindingService.GetDirection(currentNode, currentNode = path.Pop(), path.Peek());
-            BackgroundImage.sprite = path.Peek().Sprite;
+            BackgroundImage.sprite = currentNode.Sprite;
             DirectionImage.sprite = Sprites[(int)nextDirection];
             DirectionText.SetText($"Direction_{nextDirection}");
             DirectionAudioSource.PlayOneShot(AudioClips[(int)nextDirection]);
