@@ -53,6 +53,7 @@ public class NavigationScreenController : ModularScreenController
             DirectionImage.sprite = Sprites[Sprites.Length - 1];
             DirectionText.SetText("Direction_DestinationReached");
             SetMode("DestinationReached");
+            DirectionAudioSource.PlayOneShot(AudioClips[AudioClips.Length - 1]);
         }
         else
         {
@@ -61,7 +62,7 @@ public class NavigationScreenController : ModularScreenController
             BackgroundImage.sprite = path.Peek().Sprite;
             DirectionImage.sprite = Sprites[(int)nextDirection];
             DirectionText.SetText($"Direction_{nextDirection}");
-            //DirectionAudioSource.PlayOneShot(AudioClips[(int)nextDirection]);
+            DirectionAudioSource.PlayOneShot(AudioClips[(int)nextDirection]);
         }
     }
 

@@ -5516,7 +5516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &389507793
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8973,7 +8973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &684702172
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20287,11 +20287,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 88d00c1d95405e24c877e40ee8c6868a, type: 3}
   - {fileID: 21300000, guid: 428953b4c5323784b80ac9554d0e765f, type: 3}
   AudioClips:
+  - {fileID: 8300000, guid: 0906f3c1128501849b11e39fa8515db2, type: 3}
+  - {fileID: 8300000, guid: a78c2dee7f75fa540b3512cbc0afff3f, type: 3}
+  - {fileID: 8300000, guid: 0a4e5925bdc029844aba7ad4ec608028, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 4ee9d9ff44873364d95e469ab1ed41c2, type: 3}
   - {fileID: 0}
   - {fileID: 0}
 --- !u!114 &1381896667 stripped
