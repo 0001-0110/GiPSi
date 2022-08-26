@@ -19949,7 +19949,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1277714721
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28668,7 +28668,7 @@ MonoBehaviour:
   - screenMode: 10
     gameObjects:
     - {fileID: 656826194}
-  SelectionDropdown: {fileID: 0}
+  SelectionDropdown: {fileID: 1280433076}
   Options: []
 --- !u!1 &1811032139
 GameObject:
@@ -31423,7 +31423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: Text_AppName
 --- !u!114 &1958481241
 MonoBehaviour:
   m_ObjectHideFlags: 0
