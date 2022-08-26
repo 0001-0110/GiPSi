@@ -11,7 +11,7 @@ public class LanguageController : MonoBehaviour
     public bool IsReady { get; private set; }
     public Language CurrentLanguage { get; private set; }
     public Dictionary<string, string> LocalizationStrings { get; private set; }
-    public List<TextController> TextControllers;
+    public List<TextController> TextControllers { get; set; }
 
     public void Awake()
     {
@@ -22,6 +22,7 @@ public class LanguageController : MonoBehaviour
         Instance = this;
 
         IsReady = false;
+        TextControllers = new List<TextController>();
 
         if (PlayerPrefs.HasKey("Language"))
             SetLanguage(PlayerPrefs.GetInt("Language"));

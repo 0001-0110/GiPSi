@@ -37,7 +37,7 @@ namespace Services
                     // I am just as confused as you are
                     await Task.Yield();
                 if (!(request.result == UnityWebRequest.Result.Success))
-                    throw new Exception($"ERROR: Something went REALLY wrong. Good luck :)");
+                    throw new System.Exception($"ERROR: Something went REALLY wrong. Good luck :)");
                 else
                 {
                     xmlDocument.LoadXml(request.downloadHandler.text);
