@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 6333889}
   - component: {fileID: 6333891}
   - component: {fileID: 6333890}
+  - component: {fileID: 6333892}
   m_Layer: 5
   m_Name: AppName
   m_TagString: Untagged
@@ -352,6 +353,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6333888}
   m_CullTransparentMesh: 1
+--- !u!114 &6333892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6333888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationString: '{Text_AppName}'
 --- !u!1 &27209695
 GameObject:
   m_ObjectHideFlags: 0
@@ -2968,7 +2982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Text_BoardingSelection
+  LocalizationString: '{Text_BoardingSelection}'
 --- !u!114 &234006083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3790,6 +3804,7 @@ GameObject:
   - component: {fileID: 290371879}
   - component: {fileID: 290371881}
   - component: {fileID: 290371880}
+  - component: {fileID: 290371882}
   m_Layer: 5
   m_Name: AppName
   m_TagString: Untagged
@@ -3858,6 +3873,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290371878}
   m_CullTransparentMesh: 1
+--- !u!114 &290371882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290371878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationString: '{Text_AppName}'
 --- !u!1001 &291303559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4201,7 +4229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Next
+  LocalizationString: '{Button_Next}'
 --- !u!114 &300420525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5053,7 +5081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Text_AppName
+  LocalizationString: '{Text_AppName}'
 --- !u!114 &352090181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5458,7 +5486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Back
+  LocalizationString: '{Button_Back}'
 --- !u!114 &359178160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5943,7 +5971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Text_ClassSelection
+  LocalizationString: '{Text_ClassSelection}'
 --- !u!114 &411050963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6737,6 +6765,7 @@ GameObject:
   - component: {fileID: 490203683}
   - component: {fileID: 490203685}
   - component: {fileID: 490203684}
+  - component: {fileID: 490203686}
   m_Layer: 5
   m_Name: AppName
   m_TagString: Untagged
@@ -6805,6 +6834,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490203682}
   m_CullTransparentMesh: 1
+--- !u!114 &490203686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490203682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationString: '{Text_AppName}'
 --- !u!1 &496099168
 GameObject:
   m_ObjectHideFlags: 0
@@ -6930,7 +6972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Text_HandicapSelection
+  LocalizationString: '{Text_HandicapSelection}'
 --- !u!114 &497281640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7624,7 +7666,7 @@ PrefabInstance:
       objectReference: {fileID: 12800000, guid: cae732218b29bd749ac051b8d10ccd34, type: 3}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: LocalizationString
-      value: Button_UpdatePosition
+      value: '{Button_UpdatePosition}'
       objectReference: {fileID: 0}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: localizationString
@@ -8183,7 +8225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Next
+  LocalizationString: '{Button_Next}'
 --- !u!114 &548826412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8863,7 +8905,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 500}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &639556055
 MonoBehaviour:
@@ -8887,7 +8929,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: e2086e9598f712c468b02e4a6d7550de, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -8996,7 +9038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Back
+  LocalizationString: '{Button_Back}'
 --- !u!114 &643755761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9617,7 +9659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: InputField_UserName
+  LocalizationString: '{InputField_UserName}'
 --- !u!222 &675029896
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9921,7 +9963,7 @@ PrefabInstance:
       objectReference: {fileID: 12800000, guid: cae732218b29bd749ac051b8d10ccd34, type: 3}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: LocalizationString
-      value: Button_Back
+      value: '{Button_Back}'
       objectReference: {fileID: 0}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: localizationString
@@ -10410,7 +10452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: InputField_LastName
+  LocalizationString: '{InputField_LastName}'
 --- !u!1 &712301338
 GameObject:
   m_ObjectHideFlags: 0
@@ -10476,7 +10518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: InputField_Password
+  LocalizationString: '{InputField_Password}'
 --- !u!222 &712301341
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11105,7 +11147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Text_AppName
+  LocalizationString: '{Text_AppName}'
 --- !u!1001 &747144586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11800,7 +11842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_LanguageSettings
+  LocalizationString: '{Button_LanguageSettings}'
 --- !u!1 &767840965
 GameObject:
   m_ObjectHideFlags: 0
@@ -12131,7 +12173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Text_AppName
+  LocalizationString: '{Text_AppName}'
 --- !u!114 &781002516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12224,7 +12266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Text_ClassSelection
+  LocalizationString: '{Text_ClassSelection}'
 --- !u!114 &783007405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12403,7 +12445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_SignUp
+  LocalizationString: '{Button_SignUp}'
 --- !u!114 &805648994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12496,7 +12538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Next
+  LocalizationString: '{Button_Next}'
 --- !u!114 &810932702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13891,7 +13933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Back
+  LocalizationString: '{Button_Back}'
 --- !u!114 &893375836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14315,7 +14357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Back
+  LocalizationString: '{Button_Back}'
 --- !u!114 &929621235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14924,7 +14966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Back
+  LocalizationString: '{Button_Back}'
 --- !u!114 &970616824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15461,7 +15503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_LogIn
+  LocalizationString: '{Button_LogIn}'
 --- !u!114 &987123086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15554,7 +15596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Next
+  LocalizationString: '{Button_Next}'
 --- !u!114 &993958858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16184,7 +16226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015258789, y: 500.00006}
+  m_AnchoredPosition: {x: 0, y: 500}
   m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1017879521
@@ -16403,7 +16445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_SignUp
+  LocalizationString: '{Button_SignUp}'
 --- !u!1001 &1026422281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16569,7 +16611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Text_InvalidInput
+  LocalizationString: '{Text_InvalidInput}'
 --- !u!1 &1034863761
 GameObject:
   m_ObjectHideFlags: 0
@@ -16900,7 +16942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: InputField_UserName
+  LocalizationString: '{InputField_UserName}'
 --- !u!1 &1050348951
 GameObject:
   m_ObjectHideFlags: 0
@@ -17797,7 +17839,7 @@ PrefabInstance:
       objectReference: {fileID: 12800000, guid: cae732218b29bd749ac051b8d10ccd34, type: 3}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: LocalizationString
-      value: Button_Back
+      value: '{Button_Back}'
       objectReference: {fileID: 0}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: localizationString
@@ -18091,7 +18133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Back
+  LocalizationString: '{Button_Back}'
 --- !u!114 &1118509128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19155,7 +19197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Text_SignedUp
+  LocalizationString: '{Text_SignedUp}'
 --- !u!1 &1209331500
 GameObject:
   m_ObjectHideFlags: 0
@@ -19498,7 +19540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: InputField_ConfirmPassword
+  LocalizationString: '{InputField_ConfirmPassword}'
 --- !u!114 &1256599076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19808,7 +19850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Text_SendSOS
+  LocalizationString: '{Text_SendSOS}'
 --- !u!114 &1272189477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19995,7 +20037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Text_AppName
+  LocalizationString: '{Text_AppName}'
 --- !u!114 &1277714723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20485,7 +20527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: '{Text_InvalidInput}'
 --- !u!114 &1292942710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20995,7 +21037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Text_PositionInput
+  LocalizationString: '{Text_PositionInput}'
 --- !u!114 &1349398838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21481,7 +21523,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 500}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1389950952
 MonoBehaviour:
@@ -21505,7 +21547,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: e2086e9598f712c468b02e4a6d7550de, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -21657,7 +21699,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 500}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1401159650
 MonoBehaviour:
@@ -21681,7 +21723,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: e2086e9598f712c468b02e4a6d7550de, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -21845,7 +21887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Back
+  LocalizationString: '{Button_Back}'
 --- !u!114 &1412518320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22996,7 +23038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Text_AppName
+  LocalizationString: '{Text_AppName}'
 --- !u!1 &1471037070
 GameObject:
   m_ObjectHideFlags: 0
@@ -23122,7 +23164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: 
+  LocalizationString: '{Text_AppName}'
 --- !u!114 &1473835691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23302,7 +23344,7 @@ PrefabInstance:
       objectReference: {fileID: 12800000, guid: cae732218b29bd749ac051b8d10ccd34, type: 3}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: LocalizationString
-      value: Button_SendSOS
+      value: '{Button_SendSOS}'
       objectReference: {fileID: 0}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: localizationString
@@ -24165,7 +24207,7 @@ PrefabInstance:
       objectReference: {fileID: 12800000, guid: cae732218b29bd749ac051b8d10ccd34, type: 3}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: LocalizationString
-      value: Button_Homeroom
+      value: '{Button_Homeroom}'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
@@ -24676,7 +24718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Next
+  LocalizationString: '{Button_Next}'
 --- !u!114 &1553011362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24844,7 +24886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Back
+  LocalizationString: '{Button_Back}'
 --- !u!114 &1578494292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25073,7 +25115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: InputField_Password
+  LocalizationString: '{InputField_Password}'
 --- !u!1 &1593779778
 GameObject:
   m_ObjectHideFlags: 0
@@ -25843,6 +25885,7 @@ GameObject:
   - component: {fileID: 1638518612}
   - component: {fileID: 1638518614}
   - component: {fileID: 1638518613}
+  - component: {fileID: 1638518615}
   m_Layer: 5
   m_Name: AppName
   m_TagString: Untagged
@@ -25911,6 +25954,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638518611}
   m_CullTransparentMesh: 1
+--- !u!114 &1638518615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638518611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationString: '{Text_AppName}'
 --- !u!1 &1638721321
 GameObject:
   m_ObjectHideFlags: 0
@@ -27012,7 +27068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015258789, y: 500.00006}
+  m_AnchoredPosition: {x: 0, y: 500}
   m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1705614525
@@ -27288,7 +27344,7 @@ PrefabInstance:
       objectReference: {fileID: 12800000, guid: cae732218b29bd749ac051b8d10ccd34, type: 3}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: LocalizationString
-      value: Button_Start
+      value: '{Button_Start}'
       objectReference: {fileID: 0}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: localizationString
@@ -27792,6 +27848,7 @@ GameObject:
   - component: {fileID: 1753867743}
   - component: {fileID: 1753867745}
   - component: {fileID: 1753867744}
+  - component: {fileID: 1753867746}
   m_Layer: 5
   m_Name: AppName
   m_TagString: Untagged
@@ -27860,6 +27917,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753867742}
   m_CullTransparentMesh: 1
+--- !u!114 &1753867746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753867742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationString: '{Text_AppName}'
 --- !u!1 &1765346154
 GameObject:
   m_ObjectHideFlags: 0
@@ -28597,7 +28667,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Direction
+  m_Text: Direction (This text does not need any localization strings, they are handled
+    inside the script)
 --- !u!222 &1795359342
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -29135,7 +29206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Back
+  LocalizationString: '{Button_Back}'
 --- !u!114 &1826971213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29228,7 +29299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Back
+  LocalizationString: '{Button_Back}'
 --- !u!114 &1828954363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29774,7 +29845,7 @@ PrefabInstance:
       objectReference: {fileID: 12800000, guid: cae732218b29bd749ac051b8d10ccd34, type: 3}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: LocalizationString
-      value: Button_NextStep
+      value: '{Button_NextStep}'
       objectReference: {fileID: 0}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: localizationString
@@ -30616,7 +30687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Next
+  LocalizationString: '{Button_Next}'
 --- !u!114 &1899554194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30819,7 +30890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: InputField_PositionInput
+  LocalizationString: '{InputField_PositionInput}'
 --- !u!1 &1927762959
 GameObject:
   m_ObjectHideFlags: 0
@@ -31405,7 +31476,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1958481239
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31437,7 +31508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Text_AppName
+  LocalizationString: '{Text_AppName}'
 --- !u!114 &1958481241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31970,7 +32041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_UpdateProfile
+  LocalizationString: '{Button_UpdateProfile}'
 --- !u!1 &2008565828
 GameObject:
   m_ObjectHideFlags: 0
@@ -32457,7 +32528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_Back
+  LocalizationString: '{Button_Back}'
 --- !u!114 &2043643147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32819,7 +32890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fd710f180a7f4438cdd3c31b0bbd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalizationString: Button_UpdateTimeTable
+  LocalizationString: '{Button_UpdateTimeTable}'
 --- !u!1 &2064429898
 GameObject:
   m_ObjectHideFlags: 0
@@ -33726,7 +33797,7 @@ PrefabInstance:
       objectReference: {fileID: 12800000, guid: cae732218b29bd749ac051b8d10ccd34, type: 3}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: LocalizationString
-      value: Button_Back
+      value: '{Button_Back}'
       objectReference: {fileID: 0}
     - target: {fileID: 3112307719132610299, guid: 6d15af14f2b7b0e46ad922bbd0c498e0, type: 3}
       propertyPath: localizationString

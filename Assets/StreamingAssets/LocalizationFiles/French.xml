@@ -23,9 +23,9 @@
     <string name="Button_UpdateTimeTable">Metter a jour l'emploi du temps</string>
     <string name="Button_LanguageSettings">Changer la langue</string>
     <string name="Text_ClassSelection">Selectionnez votre classe</string>
-    <string name="Text_SectionSelection"></string>
-    <string name="Text_BoardSelection">Selectionnez votre regime</string>
-    <string name="Text_HandicapSelection">Avez vous des handicapes ?</string>
+    <string name="Text_SectionSelection"></string>      <!-- TODO -->
+    <string name="Text_BoardingSelection">Selectionnez votre regime</string>
+    <string name="Text_HandicapSelection">Avez vous des handicaps ?</string>
     <string name="Text_SignedUp">Votre profil est complet, bienvenue !</string>
 
     <!-- PositionScreen -->

@@ -51,7 +51,7 @@ public class NavigationScreenController : ModularScreenController
         {
             // Destination reached
             DirectionImage.sprite = Sprites[Sprites.Length - 1];
-            DirectionText.SetText("Direction_DestinationReached");
+            DirectionText.SetText("{Direction_DestinationReached}");
             SetMode(ScreenMode.DestinationReached);
             DirectionAudioSource.PlayOneShot(AudioClips[AudioClips.Length - 1]);
         }
@@ -61,7 +61,7 @@ public class NavigationScreenController : ModularScreenController
             Direction nextDirection = PathFindingService.GetDirection(currentNode, currentNode = path.Pop(), path.Peek());
             BackgroundImage.sprite = currentNode.Sprite;
             DirectionImage.sprite = Sprites[(int)nextDirection];
-            DirectionText.SetText($"Direction_{nextDirection}");
+            DirectionText.SetText($"{{Direction_{nextDirection}}}");
             DirectionAudioSource.PlayOneShot(AudioClips[(int)nextDirection]);
         }
     }
