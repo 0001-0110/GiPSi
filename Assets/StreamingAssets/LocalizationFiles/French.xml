@@ -20,10 +20,14 @@
     <!-- Settings -->
     <string name="Button_Settings">Parametres</string>
     <string name="Button_UpdateProfile">Metter a jour le profil</string>
+    <string name="Button_ClassSelection">Changer de classe</string>
+    <string name="Button_SectionSelection">Changer de section</string>
+    <string name="Button_BoardSelection">Changer de regime</string>
+    <string name="Button_HandicapSelection">Mettre a jour les handicaps</string>
     <string name="Button_UpdateTimeTable">Metter a jour l'emploi du temps</string>
     <string name="Button_LanguageSettings">Changer la langue</string>
     <string name="Text_ClassSelection">Selectionnez votre classe</string>
-    <string name="Text_SectionSelection"></string>      <!-- TODO -->
+    <string name="Text_SectionSelection">Selectionnez votre section</string>
     <string name="Text_BoardingSelection">Selectionnez votre regime</string>
     <string name="Text_HandicapSelection">Avez vous des handicaps ?</string>
     <string name="Text_SignedUp">Votre profil est complet, bienvenue !</string>

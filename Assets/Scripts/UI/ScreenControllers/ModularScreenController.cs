@@ -65,6 +65,8 @@ public abstract class ModularScreenController : ScreenController
     public static void SetMode(ScreenMode screenMode)
     {
         activeScreenMode = screenMode;
+        // TODO ???
+        ActiveScreen.GetComponent<ModularScreenController>()?.UpdateMode();
         /*foreach (ModularScreenController modularScreenController in modularScreenControllers)
             modularScreenController.UpdateMode();*/
     }

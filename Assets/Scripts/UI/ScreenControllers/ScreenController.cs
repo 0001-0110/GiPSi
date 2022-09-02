@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class ScreenController : MonoBehaviour
 {
+    public static GameObject ActiveScreen { get; protected set; }
+
     public virtual void Awake()
     {
 
@@ -48,6 +50,7 @@ public class ScreenController : MonoBehaviour
 
     public virtual void OpenScreen(GameObject screen)
     {
+        ActiveScreen = screen;
         screen.SetActive(true);
         gameObject.SetActive(false);
     }
