@@ -8,8 +8,9 @@ using Pathfinding;
 public class NavigationScreenController : ModularScreenController
 {
     public NavMesh navMesh;
-    private Stack<Node> path;
-    private Node currentNode;
+    private Queue<Connection> path;
+    private Connection currentConnection;
+
     public Destination Destination { get; set; }
 
     public Image BackgroundImage;
@@ -28,12 +29,13 @@ public class NavigationScreenController : ModularScreenController
     {
         if (path == null)
             return;
-        foreach (Node node in path)
+        foreach (Connection connection in path)
         {
             Gizmos.color = Color.cyan;
-            Gizmos.DrawSphere(node.Position, 0.75f);
+            Gizmos.DrawLine(connection.Tail.Position, connection.Head.Position);
         }
-        if (currentNode != null)
+        // TODO obsolete code, must redo with the conenctions
+        /*if (currentConnection.Tail != null)
         {
             Gizmos.color = Color.blue;
             Gizmos.DrawSphere(currentNode.Position, 0.75f);
@@ -42,12 +44,12 @@ public class NavigationScreenController : ModularScreenController
         {
             Gizmos.color = Color.white;
             Gizmos.DrawSphere(path.Peek().Position, 0.75f);
-        }
+        }*/
     }
 
-    public void NextStep()
+    private void NextStep()
     {
-        if (path.Count < 2)
+        if (path.Count <= 0)
         {
             // Destination reached
             DirectionImage.sprite = Sprites[Sprites.Length - 1];
@@ -58,8 +60,8 @@ public class NavigationScreenController : ModularScreenController
         else
         {
             // This line is sus
-            Direction nextDirection = PathFindingService.GetDirection(currentNode, currentNode = path.Pop(), path.Peek());
-            BackgroundImage.sprite = currentNode.Sprite;
+            Direction nextDirection = PathFindingService.GetDirection(currentConnection, currentConnection = path.Dequeue());
+            BackgroundImage.sprite = currentConnection.Sprite;
             DirectionImage.sprite = Sprites[(int)nextDirection];
             DirectionText.SetText($"{{Direction_{nextDirection}}}");
             DirectionAudioSource.PlayOneShot(AudioClips[(int)nextDirection]);
@@ -70,9 +72,12 @@ public class NavigationScreenController : ModularScreenController
     {
         Debug.Log($"DEBUG: NAVIGATION - going from {startingNode} to {destinationNode}");
         SetMode(ScreenMode.Navigating);
-        path = navMesh.GetSimplifiedPath(startingNode, destinationNode);
-        currentNode = path.Pop();
+
+        path = navMesh.GetPath(startingNode, destinationNode);
+        // Set the current connection
+        currentConnection = path.Dequeue();
         NextStep();
+
         return true;
     }
 }

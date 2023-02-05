@@ -88,7 +88,7 @@ namespace Pathfinding
         }
 
         /// <summary>
-        /// 
+        /// UNUSED
         /// </summary>
         /// <param name="previousNode"></param>
         /// <param name="currentNode"></param>
@@ -104,6 +104,25 @@ namespace Pathfinding
             {
                 // the angle between the two vectors, in degree
                 float angle = GetAngle(GetVector(previousNode, currentNode), GetVector(currentNode, nextNode));
+                return
+                    IsAlmostEqual(angle, 0) ? Direction.Forward :
+                    IsAlmostEqual(angle, 90) ? Direction.Left :
+                    IsAlmostEqual(angle, -90) ? Direction.Right :
+                    IsAlmostEqual(angle, 180) || IsAlmostEqual(angle, -180) ? Direction.Backward :
+                    throw new Exception("And then she cartwheel-ed away");
+            }
+        }
+
+        public static Direction GetDirection(Connection previousConnection, Connection nextConnection)
+        {
+            if (nextConnection.Head.Position.z > previousConnection.Head.Position.z)
+                return Direction.Up;
+            else if (nextConnection.Head.Position.z < previousConnection.Head.Position.z)
+                return Direction.Down;
+            else
+            {
+                // the angle between the two vectors, in degree
+                float angle = GetAngle(GetVector(previousConnection.Tail, previousConnection.Head), GetVector(nextConnection.Tail, nextConnection.Head));
                 return
                     IsAlmostEqual(angle, 0) ? Direction.Forward :
                     IsAlmostEqual(angle, 90) ? Direction.Left :
