@@ -88,16 +88,6 @@ public class Node : MonoBehaviour
         PreviousConnection = null;
     }
 
-    public IEnumerable<Node> GetNeighbours()
-    {
-        // TODO
-        foreach (Node node in neighbours)
-            yield return node;
-
-        /*foreach (Connection connection in connections)
-            yield return connection.Node;*/
-    }
-
     public float Distance(Vector3 position)
     {
         return Vector3.Distance(Position, position);

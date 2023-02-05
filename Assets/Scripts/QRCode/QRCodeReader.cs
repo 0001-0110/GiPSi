@@ -86,7 +86,6 @@ public class QRCodeReader : MonoBehaviour
         // analyze the camera feed to detect and decode the QR code
         Result result = barcodeReader.Decode(rawRGB, width, heigth);
         //Result result = await Task.Run(() => barcodeReader.Decode(rawRGB, width, heigth));
-        // TODO remove debug
         Debug.Log($"DEBUG - 22 | Scanning result: {result}");
         return result?.ToString();
     }*/

@@ -51,7 +51,6 @@ public class NavMesh : MonoBehaviour
         return ListService.Min(destinations[destination], node => node.Distance(startingNode));
     }
 
-    // TODO Rename once this system is functionnal
     public Queue<Connection> GetPath(Node startNode, Node endNode, Func<Node, Node, float> heuristic)
     {
         // TODO some names could be improved
@@ -105,8 +104,7 @@ public class NavMesh : MonoBehaviour
             else
                 currentNode = ListService.Min(open, node => node.f);
         }
-        // TODO change this to get connection
-        // once the destination reached, recursive call to find the path
+        // Once the destination reached, recursive call to find the path
         return currentNode.Path();
     }
 

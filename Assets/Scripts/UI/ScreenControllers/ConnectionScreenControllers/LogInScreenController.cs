@@ -26,7 +26,6 @@ public class LogInScreenController : ConnectionScreenController
     protected override bool IsInputValid()
     {
         // TODO this needs to be connected to the database
-        // TODO remove temp value
         return base.IsInputValid() && IsPasswordCorrect();
     }
 

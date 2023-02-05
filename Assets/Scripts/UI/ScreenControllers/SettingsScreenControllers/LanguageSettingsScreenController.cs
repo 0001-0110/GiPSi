@@ -55,7 +55,8 @@ public class LanguageSettingsScreenController : ModularScreenController
 
     public void UpdateLanguage()
     {
-        // TODO need some comments, do it or you'll regret it later
+        // Need some comments, do it or you'll regret it later
+        // I did not comment this code, and now I regret it
         LanguageController.SetLanguage(languages.First(pair => pair.Value == languageTexts[LanguagesSelection.value]).Key);
         SetLanguage();
     }

@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 using Pathfinding;
 
-// TODO modular screen controller
 public class NavigationScreenController : ModularScreenController
 {
     public NavMesh navMesh;

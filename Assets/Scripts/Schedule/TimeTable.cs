@@ -9,7 +9,7 @@ namespace Schedule
     {
         public List<Period> Periods;
 
-        // TODO move this to a proper location (or remove it)
+        // TODO Temp method for testing purposes
         private static T GetRandomEnumValue<T>()
         {
             if (!typeof(T).IsEnum)
