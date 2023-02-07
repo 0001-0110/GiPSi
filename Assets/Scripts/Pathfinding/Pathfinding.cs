@@ -115,8 +115,10 @@ namespace Pathfinding
 
         public static Direction GetDirection(Connection previousConnection, Connection nextConnection)
         {
+            // If the next node is above the current one
             if (nextConnection.Head.Position.z > previousConnection.Head.Position.z)
                 return Direction.Up;
+            // If the next node is below the current one
             else if (nextConnection.Head.Position.z < previousConnection.Head.Position.z)
                 return Direction.Down;
             else
@@ -128,6 +130,7 @@ namespace Pathfinding
                     IsAlmostEqual(angle, 90) ? Direction.Left :
                     IsAlmostEqual(angle, -90) ? Direction.Right :
                     IsAlmostEqual(angle, 180) || IsAlmostEqual(angle, -180) ? Direction.Backward :
+                    // If you ever end up getting this error, good luck
                     throw new Exception("And then she cartwheel-ed away");
             }
         }
