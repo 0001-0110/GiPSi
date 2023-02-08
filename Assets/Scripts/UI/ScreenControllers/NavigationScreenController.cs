@@ -33,6 +33,7 @@ public class NavigationScreenController : ModularScreenController
             Gizmos.color = Color.cyan;
             Gizmos.DrawLine(connection.Tail.Position, connection.Head.Position);
         }
+
         // TODO obsolete code, must redo with the conenctions
         /*if (currentConnection.Tail != null)
         {

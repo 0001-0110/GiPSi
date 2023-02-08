@@ -59,7 +59,7 @@ public class Node : MonoBehaviour
         Gizmos.DrawSphere(Position, 0.5f);
         foreach (Connection connection in Connections)
         {
-            // While working in the editor, Start hasn't been called yet, meaning that the connections are missing theyre tail (this node)
+            // While working in the editor, Start hasn't been called yet, meaning that the connections are missing their tail (this node)
             connection.Tail = this;
 
             if (connection.Head != null)
@@ -87,7 +87,8 @@ public class Node : MonoBehaviour
     public void Start()
     {
         if (Destination != Destination.None)
-            if (gameObject.name != $"Node_{Destination}")
+            if (!gameObject.name.EndsWith(Destination.ToString()))
+                // This warning can be ignored if you know what you are doing
                 Debug.LogWarning($"Warning: {this} name does not match its content, there may be an error");
 
         foreach (Connection connection in Connections)
