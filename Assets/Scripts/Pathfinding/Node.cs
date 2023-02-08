@@ -59,12 +59,27 @@ public class Node : MonoBehaviour
         Gizmos.DrawSphere(Position, 0.5f);
         foreach (Connection connection in Connections)
         {
-            if (connection != null)
+            // While working in the editor, Start hasn't been called yet, meaning that the connections are missing theyre tail (this node)
+            connection.Tail = this;
+
+            if (connection.Head != null)
             {
                 // Red if the connection is only going in one direction
+                // TODO Red if multiple similar connection exist
                 // Blue if the connection is valid in both ways
                 Gizmos.color = connection.Head.Connections.Any(connection => connection.Head == this) ? Color.blue : Color.red;
                 Gizmos.DrawLine(Position, connection.Head.Position);
+
+                // If there is no image on this connection, display a small red warning icon on the connection
+                // This is probably not the best way to do it, but as long as it works...
+                if (Sprite == null)
+                {
+                    Gizmos.color = Color.red;
+                    Vector3 connectionCenter = new Vector3((connection.Tail.Position.x + connection.Head.Position.x) / 2, (connection.Tail.Position.y + connection.Head.Position.y) / 2);
+                    Gizmos.DrawWireCube(connectionCenter, new Vector3(1, 1));
+                    Gizmos.DrawCube(new Vector3(connectionCenter.x, connectionCenter.y + 0.1f), new Vector3(0.1f, 0.5f));
+                    Gizmos.DrawCube(new Vector3(connectionCenter.x, connectionCenter.y - 0.25f), new Vector3(0.1f, 0.1f));
+                }
             }
         }
     }
