@@ -2228,7 +2228,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Room208
+      value: Node_Floor_2_Room208
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Name
@@ -2243,7 +2243,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[0]
+      value: 
+      objectReference: {fileID: 654087807}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
       value: 
       objectReference: {fileID: 654087807}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -3895,7 +3903,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Room202
+      value: Node_Floor_2_Room202
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Name
@@ -3910,7 +3918,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[0]
+      value: 
+      objectReference: {fileID: 2079462234}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
       value: 
       objectReference: {fileID: 2079462234}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -9297,10 +9313,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Corridor9
+      value: Node_Floor_2_Corridor_09
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -9313,6 +9333,18 @@ PrefabInstance:
       objectReference: {fileID: 1643638668}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[2]
+      value: 
+      objectReference: {fileID: 1015136053}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
+      value: 
+      objectReference: {fileID: 1725938867}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[1].Head
+      value: 
+      objectReference: {fileID: 1643638668}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[2].Head
       value: 
       objectReference: {fileID: 1015136053}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -9530,7 +9562,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Room210
+      value: Node_Floor_2_Room210
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Name
@@ -9545,7 +9577,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[0]
+      value: 
+      objectReference: {fileID: 830381711}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
       value: 
       objectReference: {fileID: 830381711}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -10055,7 +10095,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Room204
+      value: Node_Floor_2_Room204
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Name
@@ -10070,7 +10110,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[0]
+      value: 
+      objectReference: {fileID: 1166751085}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
       value: 
       objectReference: {fileID: 1166751085}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -11232,7 +11280,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Room201
+      value: Node_Floor_2_Room201
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Name
@@ -11247,7 +11295,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[0]
+      value: 
+      objectReference: {fileID: 2079462234}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
       value: 
       objectReference: {fileID: 2079462234}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -11638,7 +11694,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Room214
+      value: Node_Floor_2_Room214
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Name
@@ -11653,7 +11709,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[0]
+      value: 
+      objectReference: {fileID: 890712933}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
       value: 
       objectReference: {fileID: 890712933}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -13082,10 +13146,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Corridor6
+      value: Node_Floor_2_Corridor_06
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -13102,6 +13170,22 @@ PrefabInstance:
       objectReference: {fileID: 1293289368}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[3]
+      value: 
+      objectReference: {fileID: 1902997304}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
+      value: 
+      objectReference: {fileID: 2104941498}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[1].Head
+      value: 
+      objectReference: {fileID: 1500583021}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[2].Head
+      value: 
+      objectReference: {fileID: 1293289368}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[3].Head
       value: 
       objectReference: {fileID: 1902997304}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -13874,10 +13958,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Corridor2
+      value: Node_Floor_2_Corridor_02
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -13894,6 +13982,22 @@ PrefabInstance:
       objectReference: {fileID: 950067124}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[3]
+      value: 
+      objectReference: {fileID: 794471257}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
+      value: 
+      objectReference: {fileID: 2079462234}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[1].Head
+      value: 
+      objectReference: {fileID: 1166751085}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[2].Head
+      value: 
+      objectReference: {fileID: 950067124}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[3].Head
       value: 
       objectReference: {fileID: 794471257}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -16183,10 +16287,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Stairs3
+      value: Node_Floor_2_Stairs3
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -16205,6 +16313,14 @@ PrefabInstance:
       propertyPath: neighbours.Array.data[3]
       value: 
       objectReference: {fileID: 890712933}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
+      value: 
+      objectReference: {fileID: 654087807}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[1].Head
+      value: 
+      objectReference: {fileID: 2051536786}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -16530,7 +16646,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Room209
+      value: Node_Floor_2_Room209
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Name
@@ -16545,9 +16661,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[0]
       value: 
       objectReference: {fileID: 1725938867}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
+      value: 
+      objectReference: {fileID: 1500583021}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -16861,7 +16985,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Room212
+      value: Node_Floor_2_Room212
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Name
@@ -16876,7 +17000,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[0]
+      value: 
+      objectReference: {fileID: 1859831052}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
       value: 
       objectReference: {fileID: 1859831052}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -17555,7 +17687,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Room207
+      value: Node_Floor_2_Room207
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Name
@@ -18938,7 +19070,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Corridor3
+      value: Node_Floor_2_Corridor_03
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Sprite
@@ -18946,6 +19078,10 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 83aac9a5d8c121d419932b3da53ffb09, type: 3}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -18962,6 +19098,22 @@ PrefabInstance:
       objectReference: {fileID: 975584764}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[3]
+      value: 
+      objectReference: {fileID: 1713291403}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
+      value: 
+      objectReference: {fileID: 890712933}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[1].Head
+      value: 
+      objectReference: {fileID: 1859831052}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[2].Head
+      value: 
+      objectReference: {fileID: 975584764}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[3].Head
       value: 
       objectReference: {fileID: 1713291403}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -19691,7 +19843,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Room205
+      value: Node_Floor_2_Room205
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Name
@@ -19706,7 +19858,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[0]
+      value: 
+      objectReference: {fileID: 830381711}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
       value: 
       objectReference: {fileID: 830381711}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -20822,7 +20982,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Stairs1
+      value: Node_Floor_2_Stairs1
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Sprite
@@ -20830,6 +20990,10 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: b5abe8f9f8634904cbfed1af77c2cf29, type: 3}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -20848,6 +21012,14 @@ PrefabInstance:
       propertyPath: neighbours.Array.data[3]
       value: 
       objectReference: {fileID: 890712933}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
+      value: 
+      objectReference: {fileID: 2079462234}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[1].Head
+      value: 
+      objectReference: {fileID: 1524889274}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -21256,7 +21428,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Room213
+      value: Node_Floor_2_Room213
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Name
@@ -21271,7 +21443,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[0]
+      value: 
+      objectReference: {fileID: 1166751085}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
       value: 
       objectReference: {fileID: 1166751085}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -22338,7 +22518,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Room211
+      value: Node_Floor_2_Room211
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Name
@@ -22353,7 +22533,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[0]
+      value: 
+      objectReference: {fileID: 2104941498}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
       value: 
       objectReference: {fileID: 2104941498}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -23790,7 +23978,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Corridor7
+      value: Node_Floor_2_Corridor_07
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
@@ -23798,7 +23986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Connections.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[0]
@@ -23819,11 +24007,19 @@ PrefabInstance:
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Connections.Array.data[0].Head
       value: 
-      objectReference: {fileID: 1725938867}
+      objectReference: {fileID: 830381711}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Connections.Array.data[1].Head
       value: 
+      objectReference: {fileID: 1725938867}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[2].Head
+      value: 
       objectReference: {fileID: 769953687}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[3].Head
+      value: 
+      objectReference: {fileID: 901457093}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -23974,7 +24170,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Room203
+      value: Node_Floor_2_Room203
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Name
@@ -23989,7 +24185,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[0]
+      value: 
+      objectReference: {fileID: 890712933}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
       value: 
       objectReference: {fileID: 890712933}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -25468,7 +25672,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Room206
+      value: Node_Floor_2_Room206
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Name
@@ -27707,7 +27911,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Corridor8
+      value: Node_Floor_2_Corridor_08
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
@@ -27715,7 +27919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Connections.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[0]
@@ -27740,7 +27944,15 @@ PrefabInstance:
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Connections.Array.data[1].Head
       value: 
+      objectReference: {fileID: 654087807}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[2].Head
+      value: 
       objectReference: {fileID: 1105381368}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[3].Head
+      value: 
+      objectReference: {fileID: 901457093}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -30141,10 +30353,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Corridor4
+      value: Node_Floor_2_Corridor_04
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -30157,6 +30373,18 @@ PrefabInstance:
       objectReference: {fileID: 2104941498}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[2]
+      value: 
+      objectReference: {fileID: 68166627}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
+      value: 
+      objectReference: {fileID: 1166751085}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[1].Head
+      value: 
+      objectReference: {fileID: 2104941498}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[2].Head
       value: 
       objectReference: {fileID: 68166627}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -33241,7 +33469,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Corridor1
+      value: Node_Floor_2_Corridor_01
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Sprite
@@ -33249,6 +33477,10 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 5b8df0c8f68d8624ba49e83a4f1b858b, type: 3}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -33269,6 +33501,22 @@ PrefabInstance:
       objectReference: {fileID: 1334291577}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[4]
+      value: 
+      objectReference: {fileID: 1334291577}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
+      value: 
+      objectReference: {fileID: 2109833623}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[1].Head
+      value: 
+      objectReference: {fileID: 1018890319}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[2].Head
+      value: 
+      objectReference: {fileID: 890712933}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[3].Head
       value: 
       objectReference: {fileID: 1334291577}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -33510,10 +33758,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Corridor5
+      value: Node_Floor_2_Corridor_05
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -33530,6 +33782,22 @@ PrefabInstance:
       objectReference: {fileID: 1486463827}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.data[3]
+      value: 
+      objectReference: {fileID: 2108656071}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
+      value: 
+      objectReference: {fileID: 1859831052}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[1].Head
+      value: 
+      objectReference: {fileID: 830381711}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[2].Head
+      value: 
+      objectReference: {fileID: 1486463827}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[3].Head
       value: 
       objectReference: {fileID: 2108656071}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -33603,10 +33871,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047356241228986234, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_Name
-      value: Node_Stairs2
+      value: Node_Floor_2_Stairs2
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: neighbours.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
@@ -33625,6 +33897,14 @@ PrefabInstance:
       propertyPath: neighbours.Array.data[3]
       value: 
       objectReference: {fileID: 890712933}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[0].Head
+      value: 
+      objectReference: {fileID: 2104941498}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[1].Head
+      value: 
+      objectReference: {fileID: 620129285}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_RootOrder
       value: 24
