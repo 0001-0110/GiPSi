@@ -26,12 +26,7 @@ public class Node : MonoBehaviour
     public Vector3 Position => transform.position;
 
     public string Name;
-    public Sprite Sprite;
     public Destination Destination;
-
-    [SerializeField]
-    [Tooltip("OBSOLETE")]
-    private List<Node> neighbours;
 
     [Tooltip("All the nodes accessible from this one")]
     public List<Connection> Connections;
@@ -72,7 +67,7 @@ public class Node : MonoBehaviour
 
                 // If there is no image on this connection, display a small red warning icon on the connection
                 // This is probably not the best way to do it, but as long as it works...
-                if (Sprite == null)
+                if (connection.Sprite == null)
                 {
                     Gizmos.color = Color.red;
                     Vector3 connectionCenter = new Vector3((connection.Tail.Position.x + connection.Head.Position.x) / 2, (connection.Tail.Position.y + connection.Head.Position.y) / 2);
