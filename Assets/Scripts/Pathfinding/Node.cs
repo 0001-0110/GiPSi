@@ -87,7 +87,12 @@ public class Node : MonoBehaviour
                 Debug.LogWarning($"Warning: {this} name does not match its content, there may be an error");
 
         foreach (Connection connection in Connections)
+        {
             connection.Tail = this;
+
+            if (connection.Sprite == null)
+                Debug.LogWarning($"Missing Sprite for the connection {connection}");
+        }
 
         InitPathfinding();
     }
