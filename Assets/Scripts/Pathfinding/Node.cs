@@ -50,13 +50,14 @@ public class Node : MonoBehaviour
         // If the node is connected to an empty connection or to itself, make it Red
         // If this node is not a destination, make it yellow
         // If it is, make it green
-        Gizmos.color = Connections.Contains(null) || Connections.Any(connection => connection.Head == this) ? Color.red : Destination == Destination.None ? Color.yellow : Color.green;
+        Gizmos.color = Connections.Contains(null) || Connections.Any(connection => connection.Head == this) ? Color.red : Connections.Any(connection => connection.Sprite == null) ? Color.yellow : Destination == Destination.None ? Color.blue : Color.green;
         Gizmos.DrawSphere(Position, 0.5f);
         foreach (Connection connection in Connections)
         {
             // While working in the editor, Start hasn't been called yet, meaning that the connections are missing their tail (this node)
             connection.Tail = this;
 
+            // Ignore connections that aren't set yet
             if (connection.Head != null)
             {
                 // Red if the connection is only going in one direction
@@ -69,11 +70,12 @@ public class Node : MonoBehaviour
                 // This is probably not the best way to do it, but as long as it works...
                 if (connection.Sprite == null)
                 {
-                    Gizmos.color = Color.red;
+                    Gizmos.color = Color.yellow;
                     Vector3 connectionCenter = new Vector3((connection.Tail.Position.x + connection.Head.Position.x) / 2, (connection.Tail.Position.y + connection.Head.Position.y) / 2);
                     Gizmos.DrawWireCube(connectionCenter, new Vector3(1, 1));
                     Gizmos.DrawCube(new Vector3(connectionCenter.x, connectionCenter.y + 0.1f), new Vector3(0.1f, 0.5f));
                     Gizmos.DrawCube(new Vector3(connectionCenter.x, connectionCenter.y - 0.25f), new Vector3(0.1f, 0.1f));
+                    //Gizmos.DrawLine(connection.Tail.Position, connectionCenter);
                 }
             }
         }

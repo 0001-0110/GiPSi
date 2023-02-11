@@ -62,14 +62,14 @@ public class NavigationScreenController : ModularScreenController
             // We dequeue now to get the previous and the current connection
             Direction nextDirection = PathFindingService.GetDirection(currentConnection, currentConnection = path.Dequeue());
 
-            // TODO need to be tested
+            // TODO do we want to skip these steps ?
             // Seems to work fine, but could cause issues if the path if only going forward
-            if (nextDirection == Direction.Forward)
+            /*if (nextDirection == Direction.Forward)
             {
                 // If the direction is forward, we skip this step to make it simpler for the user
                 NextStep();
                 return;
-            }
+            }*/
 
             // If this step is not skipped, we display the instructions
             BackgroundImage.sprite = currentConnection.Sprite;

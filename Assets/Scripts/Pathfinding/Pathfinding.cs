@@ -6,7 +6,7 @@ namespace Pathfinding
     public enum Destination
     {
         None,
-        Cafetaria,
+        Cafeteria,
         CPE,
         Infirmary,
         Library,

@@ -15,6 +15,10 @@ public class NavMesh : MonoBehaviour
 
     public void Start()
     {
+        foreach (Transform floor in transform)
+            if (!floor.gameObject.activeSelf)
+                Debug.LogWarning($"{floor.name} is inactive, this might cause pathfinding issues");
+
         nodes = new List<Node>();
         destinations = new Dictionary<Destination, List<Node>>();
         foreach (Destination destination in Enum.GetValues(typeof(Destination)))
