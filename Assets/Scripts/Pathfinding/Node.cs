@@ -47,10 +47,14 @@ public class Node : MonoBehaviour
 
     public void OnDrawGizmos()
     {
+        // TODO making multiple conditions would improve readability
         // If the node is connected to an empty connection or to itself, make it Red
         // If this node is not a destination, make it yellow
         // If it is, make it green
         Gizmos.color = Connections.Contains(null) || Connections.Any(connection => connection.Head == this) ? Color.red : Connections.Any(connection => connection.Sprite == null) ? Color.yellow : Destination == Destination.None ? Color.blue : Color.green;
+        // If the destination is set to an invalid value, make the node red
+        if (!Enum.IsDefined(typeof(Destination), Destination))
+            Gizmos.color = Color.red;
         Gizmos.DrawSphere(Position, 0.5f);
         foreach (Connection connection in Connections)
         {

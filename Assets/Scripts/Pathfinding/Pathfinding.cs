@@ -5,12 +5,14 @@ namespace Pathfinding
 {
     public enum Destination
     {
-        None,
-        Cafeteria,
-        CPE,
-        Infirmary,
-        Library,
-        Toilets,
+        None = 0,
+        Cafeteria = -1,
+        CPE = -2,
+        Infirmary = -3,
+        Library = -4,
+        Toilets = -5,
+        Room001 = 1,
+        Room002,
         Room101 = 101,
         Room102,
         Room103,
