@@ -1,9 +1,9 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
 using Pathfinding;
-using System.Linq;
 
 [Serializable]
 public class Connection
@@ -83,6 +83,12 @@ public class Node : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(Position, 0.75f);
     }
 
     public void Start()
