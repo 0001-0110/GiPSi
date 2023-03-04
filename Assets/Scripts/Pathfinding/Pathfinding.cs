@@ -5,6 +5,8 @@ namespace Pathfinding
 {
     public enum Destination
     {
+        // TODO might not be the smartest way to number these
+        // Don't forget to change the values in unity if you change them here
         None = 0,
         Cafeteria = -1,
         CPE = -2,
