@@ -34,13 +34,13 @@ public class Node : MonoBehaviour
     // these attributes are used for A*
     /// <summary>g is the distance from the starting point</summary>
     [HideInInspector]
-    public float g;
+    public float CurrentCost;
     /// <summary>h is the heuristic distance from the destination</summary>
     [HideInInspector]
-    public float h;
+    public float EstimatedCost;
     /// <summary>f is the sum of g and h, giving the score of the node</summary>
     [HideInInspector]
-    public float f => g + h;
+    public float TotalEstimatedCost => CurrentCost + EstimatedCost;
     /// <summary></summary>
     [HideInInspector]
     public Connection PreviousConnection;
@@ -111,8 +111,8 @@ public class Node : MonoBehaviour
 
     public void InitPathfinding()
     {
-        g = 0;
-        h = 0;
+        CurrentCost = 0;
+        EstimatedCost = 0;
         PreviousConnection = null;
     }
 

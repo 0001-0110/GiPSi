@@ -23,8 +23,9 @@ public class NavMesh : MonoBehaviour
         destinations = new Dictionary<Destination, List<Node>>();
         foreach (Destination destination in Enum.GetValues(typeof(Destination)))
             destinations[destination] = new List<Node>();
-        // put all navNodes in the list
-        foreach (Node node in GetComponentsInChildren<Node>())
+        // Put all active navNodes in the list
+        // includeInactive is only here for the sake of clarity
+        foreach (Node node in GetComponentsInChildren<Node>(includeInactive:false))
         {
             nodes.Add(node);
             destinations[node.Destination].Add(node);
@@ -57,8 +58,6 @@ public class NavMesh : MonoBehaviour
 
     public Queue<Connection> GetPath(Node startNode, Node endNode, Func<Node, Node, float> heuristic)
     {
-        // TODO some names could be improved
-
         if (startNode == null)
             throw new ArgumentNullException("ERROR - GetPath | startNode is null");
         if (endNode == null)
@@ -74,9 +73,9 @@ public class NavMesh : MonoBehaviour
         Node currentNode = startNode;
         // Not necessary, but makes more sense
         open.Add(currentNode);
-        currentNode.g = 0;
+        currentNode.CurrentCost = 0;
         //currentNode.h = currentNode.Distance(destinationNode);
-        currentNode.h = heuristic(currentNode, endNode);
+        currentNode.EstimatedCost = heuristic(currentNode, endNode);
         currentNode.PreviousConnection = null;
         while (currentNode != endNode)
         {
@@ -86,13 +85,13 @@ public class NavMesh : MonoBehaviour
                 {
                     open.Add(connection.Head);
                     //float g = currentNode.g + node.Distance(currentNode);
-                    float g = currentNode.g + heuristic(connection.Tail, connection.Head);
-                    float h = heuristic(connection.Tail, endNode);
-                    float f = g + h;
-                    if (f < connection.Head.f || connection.Head.f == 0)
+                    float newCurrentCost = currentNode.CurrentCost + heuristic(connection.Tail, connection.Head);
+                    float newEstimatedCost = heuristic(connection.Tail, endNode);
+                    float newTotalEstimatedCost = newCurrentCost + newEstimatedCost;
+                    if (newTotalEstimatedCost < connection.Head.TotalEstimatedCost || connection.Head.TotalEstimatedCost == 0)
                     {
-                        connection.Head.g = g;
-                        connection.Head.h = h;
+                        connection.Head.CurrentCost = newCurrentCost;
+                        connection.Head.EstimatedCost = newEstimatedCost;
                         // If this node is the shortest path that led here, set the previous connection
                         connection.Head.PreviousConnection = connection;
                     }
@@ -103,10 +102,13 @@ public class NavMesh : MonoBehaviour
             closed.Add(currentNode);
             // the next node to explore is the one with the smallest f value
             if (open.Count == 0)
+            {
                 // No path to the destination exists (return null)
+                Debug.Log("No path to the destination exists, make sure that all nodes are either connected or disabled");
                 return null;
+            }
             else
-                currentNode = ListService.Min(open, node => node.f);
+                currentNode = ListService.Min(open, node => node.TotalEstimatedCost);
         }
         // Once the destination reached, recursive call to find the path
         return currentNode.Path();
