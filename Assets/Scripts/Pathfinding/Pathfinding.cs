@@ -15,6 +15,10 @@ namespace Pathfinding
         Toilets = -5,
         Room001 = 1,
         Room002,
+        Room003,
+        Room004,
+        Room005,
+        Room006,
         Room101 = 101,
         Room102,
         Room103,
@@ -47,6 +51,7 @@ namespace Pathfinding
 
     public enum Direction
     {
+        // https://youtu.be/wZv62ShoStY?t=37
         Right,
         Forward,
         Left,
