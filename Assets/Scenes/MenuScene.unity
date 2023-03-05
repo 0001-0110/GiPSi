@@ -3324,6 +3324,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 2e9349be048de8c43bb4cee68933363f, type: 3}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[2].Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 582c177a974c0364bb9b5f3926caaafb, type: 3}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Connections.Array.data[3].Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a16169e96adf9514280087e58974f9ab, type: 3}
@@ -7261,7 +7265,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417192614}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -9515,6 +9519,10 @@ PrefabInstance:
       propertyPath: Connections.Array.data[0].Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a1d9b840d6a3ae94faca5a99ad1f134d, type: 3}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[1].Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f27859208bcc9e74c834e0c6e21cf1d7, type: 3}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -15785,7 +15793,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &846725062
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19110,6 +19118,10 @@ PrefabInstance:
       propertyPath: Connections.Array.data[0].Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 51eccfc326ea9ad4bab0214d6bc7717a, type: 3}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[1].Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a500e5738bc62c4ba1a96264e1401c9, type: 3}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Connections.Array.data[2].Sprite
       value: 
@@ -25858,6 +25870,10 @@ PrefabInstance:
       propertyPath: Connections.Array.data[0].Sprite
       value: 
       objectReference: {fileID: 21300000, guid: b5f1312444ae50142b2aa39f451f4ecb, type: 3}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[1].Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 253463d81c7682543bb66b64f2a4d210, type: 3}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Connections.Array.data[2].Sprite
       value: 
@@ -32882,7 +32898,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1777057944
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34713,7 +34729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Connections.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Connections.Array.data[0].Head
@@ -34726,7 +34742,7 @@ PrefabInstance:
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Connections.Array.data[1].Head
       value: 
-      objectReference: {fileID: 1009526179}
+      objectReference: {fileID: 508244479}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Connections.Array.data[1].Tail
       value: 
@@ -34734,7 +34750,7 @@ PrefabInstance:
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Connections.Array.data[2].Head
       value: 
-      objectReference: {fileID: 508244479}
+      objectReference: {fileID: 1009526179}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: Connections.Array.data[2].Tail
       value: 
@@ -34752,9 +34768,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: b5540e277e1f5644a8b184ed1a3e8f2d, type: 3}
     - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
-      propertyPath: Connections.Array.data[2].Sprite
+      propertyPath: Connections.Array.data[1].Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 08bebcdc105d211479d02d0705cc315e, type: 3}
+    - target: {fileID: 1916129020634289982, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
+      propertyPath: Connections.Array.data[2].Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7979bfa44d02033458a551c1bfdcd55e, type: 3}
     - target: {fileID: 5324610645619977408, guid: 474d362271f2b944abc7da2bd6f7c910, type: 3}
       propertyPath: m_RootOrder
       value: 4
